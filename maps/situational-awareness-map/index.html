@@ -1,0 +1,2551 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive documentation for the Vermont Emergency Management Common Operating Picture Experience Builder application">
+      
+      
+        <meta name="author" content="Vermont Emergency Management">
+      
+      
+        <link rel="canonical" href="https://vcgi.github.io/vem-gis-docs/maps/situational-awareness-map/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../weather-map/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Situational Awareness Map - VEM Common Operating Picture Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#situational-awareness-map-vt-cop-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VEM Common Operating Picture Documentation" class="md-header__button md-logo" aria-label="VEM Common Operating Picture Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VEM Common Operating Picture Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Situational Awareness Map
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/VCGI/vem-gis-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    VCGI/vem-gis-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Maps
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pages/" class="md-tabs__link">
+          
+  
+  
+  Pages
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python-notebooks/" class="md-tabs__link">
+          
+  
+  
+  Python Notebooks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../workflows/" class="md-tabs__link">
+          
+  
+  
+  ⚠️ Workflows
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VEM Common Operating Picture Documentation" class="md-nav__button md-logo" aria-label="VEM Common Operating Picture Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    VEM Common Operating Picture Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/VCGI/vem-gis-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    VCGI/vem-gis-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Maps
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Situational Awareness Map
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Situational Awareness Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Layers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layer Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internal-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basemap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weather-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weather Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fire-risk-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fire Risk Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastructure-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚠️ Infrastructure Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/overview-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/weather-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weather Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/fire-risk-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fire Risk Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/vt-outages-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VT Outages Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/mass-care-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mass Care Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pages/infrastructure-page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚠️ Infrastructure Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Notebooks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Notebooks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python-notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚠️ Workflows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ⚠️ Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/incident-tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/situational-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Situational Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Layers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Layers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layer Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internal-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basemap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="situational-awareness-map-vt-cop-overview">Situational Awareness Map: (VT <abbr title="Common Operating Picture">COP</abbr> - Overview)<a class="headerlink" href="#situational-awareness-map-vt-cop-overview" title="Permanent link">¶</a></h1>
+<p>The Situational Awareness map provides a comprehensive, real-time view of current conditions across Vermont by integrating multiple data sources to support emergency operations.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/cop-current-screenshot.jpg" data-desc-position="bottom"><img alt="Situational Awareness Map" src="../../images/maps/cop-current-screenshot.jpg"></a>
+<em>The situational awareness map (named VT Cop - Current) is accessible <a href="https://vtem.maps.arcgis.com/apps/mapviewer/index.html?webmap=b05da43846514d57aab5e9300ca79e7f">here</a>. It contains both grouped and ungrouped layers from internal and external sources.</em></p>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">¶</a></h2>
+<p>This map serves as the primary situational awareness guide for:</p>
+<ul>
+<li>Day-to-day monitoring of Vermont conditions</li>
+<li>Initial event assessment</li>
+<li>Coordination between agencies</li>
+<li>Public information briefings</li>
+</ul>
+<h2 id="data-layers">Data Layers<a class="headerlink" href="#data-layers" title="Permanent link">¶</a></h2>
+<h3 id="active-layers">Active Layers<a class="headerlink" href="#active-layers" title="Permanent link">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Layer Visibility</p>
+<p>Many layers are only turned on (visbile by Default) seasonally or during <abbr title="State Emergency Operations Center">SEOC</abbr> activation. For example, Flood Recovery Centers would only be turned on by default during a flood disaster.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Layer Name</th>
+<th>Symbology</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>VT EOCs - Status</td>
+<td>Classified by <code>status</code></td>
+<td><a href="https://vtem.maps.arcgis.com/home/item.html?id=77b187df5ac848caa987440f01e6d4a7&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr></a></td>
+</tr>
+<tr>
+<td></td>
+<td>WebEOC Shelter Status</td>
+<td>Classified by <code>status</code></td>
+<td><a href="https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr></a></td>
+</tr>
+<tr>
+<td></td>
+<td>Flood Recovery Centers</td>
+<td>Classified by <code>center status</code></td>
+<td><a href="https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&amp;sublayer=3"><abbr title="Vermont Emergency Management">VEM</abbr></a></td>
+</tr>
+<tr>
+<td></td>
+<td>Cooling Sites</td>
+<td>Classified by <code>SiteTypeMap</code></td>
+<td><a href="https://maps.healthvermont.gov/arcgis/rest/services/VDH/EnvHealthCoolingSites_Public/MapServer/0"><abbr title="Vermont Department of Health">VDH</abbr></a></td>
+</tr>
+<tr>
+<td></td>
+<td>Red Cross Trailer Locations</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point</td>
+<td><a href="https://services.arcgis.com/pGfbNJoYypmNq86F/ArcGIS/rest/services/ARCNNETrailerLocations/FeatureServer/0">Red Cross</a></td>
+</tr>
+<tr>
+<td>Traffic</td>
+<td>VT 511 Incidents</td>
+<td>Classified by <code>severity</code></td>
+<td><a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2">VT 511</a></td>
+</tr>
+<tr>
+<td>Traffic</td>
+<td>VT 511 Waze Reports</td>
+<td>Classified by <code>ReportType</code></td>
+<td><a href="https://services9.arcgis.com/cb6eDXWVgAvVXeIK/arcgis/rest/services/Vermont_511_Waze_Reports_20250826_232835501446/FeatureServer/0">VT 511</a></td>
+</tr>
+<tr>
+<td>Traffic</td>
+<td>VT 511 Cameras</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point</td>
+<td><a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/0">VT 511</a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td>USA Storm Reports</td>
+<td>Classified by <code>INCIDENT_TYPE</code></td>
+<td><a href="https://rhvpkkiftonktxq3.svcs9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/NOAA_storm_reports_v1/FeatureServer/4"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Hail Storm Reports</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Wind Storm Reports</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td>Current <abbr title="National Weather Service">NWS</abbr> Events</td>
+<td>Classified by <code>Subject Type</code></td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Severe Thunderstorm Warnings</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Tornado Warnings</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/1"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Flash Flood Warnings</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Special Marine Warnings</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/3"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Weather</td>
+<td>Active Hurricanes, Cyclones, &amp; Typhoons</td>
+<td>Multiple layers</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Vermont Fire Danger (Daily)</td>
+<td>Classified by <code>FIREDANGER</code></td>
+<td><a href="https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/50"><abbr title="Vermont Department of Forests, Parks, and Recreation">VTFPR</abbr></a></td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Current Wildfire Incidents</td>
+<td>Classified by <code>Wildfire Incidents (Acres)</code></td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/0"><abbr title="National Interagency Fire Center">NIFC</abbr></a></td>
+</tr>
+<tr>
+<td>Fire</td>
+<td>Current Wildfire Perimeters</td>
+<td>Classified by <code>Category</code></td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/1"><abbr title="National Interagency Fire Center">NIFC</abbr></a></td>
+</tr>
+<tr>
+<td><abbr title="Federal Emergency Management Agency">FEMA</abbr></td>
+<td><abbr title="Federal Emergency Management Agency">FEMA</abbr> Designated Counties</td>
+<td>Classified by <code>designate</code></td>
+<td><a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/0"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a></td>
+</tr>
+<tr>
+<td><abbr title="Federal Emergency Management Agency">FEMA</abbr></td>
+<td><abbr title="Federal Emergency Management Agency">FEMA</abbr> Emergency Designated Counties</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon</td>
+<td><a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/1"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a></td>
+</tr>
+<tr>
+<td>Air Quality</td>
+<td>AirNow Air Quality</td>
+<td>Classified by <code>Ozone &amp; PM AQI</code></td>
+<td><a href="https://www.arcgis.com/home/item.html?id=2d718d2733a74d1689d72b922c0ac4f4"><abbr title="Environmental Protection Agency">EPA</abbr></a></td>
+</tr>
+<tr>
+<td>Air Quality</td>
+<td>Canada Wildfire Smoke Forecast</td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> Image Service</td>
+<td><a href="https://enterpriseim.esriservices.ca/server/rest/services/Hosted/Canada_Wildfire_Smoke_Service/ImageServer"><abbr title="Environmental Systems Research Institute">ESRI</abbr></a></td>
+</tr>
+<tr>
+<td>Drought</td>
+<td>Public Reports <abbr title="Condition Monitoring Observer Reports">CMOR</abbr></td>
+<td><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point</td>
+<td><a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/CMOR_2022_Public/FeatureServer/0"><abbr title="Condition Monitoring Observer Reports">CMOR</abbr></a></td>
+</tr>
+<tr>
+<td>Drought</td>
+<td>US Drought Monitor -Current</td>
+<td>Classified by <code>DM</code></td>
+<td><a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0">USDM</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">¶</a></h3>
+<p>These feature services are not symbolized on the map but are used to populate widgets.</p>
+<div class="no-datatable">
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Layer Name</th>
+<th>Type</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tables</td>
+<td>Boil Water Notices</td>
+<td>No Symbology</td>
+<td><a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0"><abbr title="Vermont Agency of Natural Resources">VTANR</abbr></a></td>
+</tr>
+<tr>
+<td>Tables</td>
+<td>Boil Water Notices - Storm Related</td>
+<td>No Symbology</td>
+<td><a href="https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASDWGWP_WM_NOCACHE/MapServer/18"><abbr title="Vermont Agency of Natural Resources">VTANR</abbr></a></td>
+</tr>
+<tr>
+<td>Tables</td>
+<td>Reported Spills (ANR)</td>
+<td>No Symbology</td>
+<td><a href="https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASDWGWP_WM_NOCACHE/MapServer/17"><abbr title="Vermont Agency of Natural Resources">VTANR</abbr></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="reference-layers">Reference Layers<a class="headerlink" href="#reference-layers" title="Permanent link">¶</a></h3>
+<div class="no-datatable">
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Layer Name</th>
+<th>Type</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boundaries</td>
+<td>U.S. States and Territories</td>
+<td>Polygon</td>
+<td><a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/4"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a></td>
+</tr>
+<tr>
+<td>Boundaries</td>
+<td>Vermont Counties</td>
+<td>Polygon</td>
+<td><a href="https://geodata.vermont.gov/datasets/VCGI::vt-data-county-boundaries-1/about"><abbr title="Vermont Center for Geographic Information">VCGI</abbr></a></td>
+</tr>
+<tr>
+<td>Boundaries</td>
+<td>NA Political Divisions Polygons (mask)</td>
+<td>Polygon</td>
+<td><a href="https://services7.arcgis.com/oF9CDB4lUYF7Um9q/arcgis/rest/services/NA_Political_Divisions_Polygons/FeatureServer/6"><abbr title="North American Environmental">NAEA</abbr></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="layer-details">Layer Details<a class="headerlink" href="#layer-details" title="Permanent link">¶</a></h2>
+<h3 id="internal-sources">Internal Sources<a class="headerlink" href="#internal-sources" title="Permanent link">¶</a></h3>
+<p><em>The following layers are consumed from <abbr title="Vermont Emergency Management">VEM</abbr>'s <abbr title="ArcGIS Online">AGO</abbr>. Some of these layers pull data entered into WebEOC boards by <abbr title="Vermont Emergency Management">VEM</abbr> or <abbr title="Vermont Agency of Human Services">AHS</abbr>, others include data extracted from external sources using <abbr title="Extract, Transform, Load">ETL</abbr> Python notebooks.</em></p>
+<details class="info">
+<summary>VT <abbr title="Emergency Operations Center">EOC</abbr> - Status</summary>
+<p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=77b187df5ac848caa987440f01e6d4a7&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Update Method:</strong> Manually updated by <abbr title="Vermont Emergency Management">VEM</abbr> during activations</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>name</code>: <abbr title="Emergency Operations Center">EOC</abbr> location name</li>
+<li><code>address</code>: Full address</li>
+<li><code>town</code>: Town name</li>
+<li><code>status</code>: Level 1 - Normal Operations, Level 2 - Enhanced Operations, Level 3 - Partial Activation, Level 4 - Full Activation, Inactive, Unknown</li>
+<li><code>type</code>: Municipal <abbr title="Emergency Operations Center">EOC</abbr>, State of Vermont <abbr title="Emergency Operations Center">EOC</abbr></li>
+<li><code>site_preference</code>: Primary Location, Alternative Location</li>
+<li><code>note</code>: Relevant notes</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>Status</code><br>
+Icon: <abbr title="Emergency Operations Center">EOC</abbr> symbol imported from <a href="https://www.arcgis.com/home/item.html?id=492df16d20934e989952c0366f0aadbf">NAPSG  Resources Stylesheet</a><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-eoc-symbology.jpg" data-desc-position="bottom"><img alt="VT EOC Status Symbology Screenshot" src="../../images/maps/vt-eoc-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="Emergency Operations Center">EOC</abbr> Status Updates</p>
+<p>Municipal <abbr title="Emergency Operations Center">EOC</abbr> updates are inconsistent and often aren't updated after an <abbr title="Emergency Operations Center">EOC</abbr> closes. Verify current status with local EMD before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>WebEOC Shelter Status</summary>
+<p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> during activations</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>shelter_name</code>: Facility name</li>
+<li><code>address</code>: Street address</li>
+<li><code>town</code>: Municipality</li>
+<li>NEED TO UPDATE LINK AND FIELDS AFTER NEW BOARD IS PUBLISHED</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>Status</code><br>
+Icon: <abbr title="Emergency Operations Center">EOC</abbr> symbol imported from <a href="https://esri-styles.maps.arcgis.com/home/item.html?id=b75a84b25d084eefadb87b57c50939f6"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Public Safety Stylesheet</a><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-shelters-symbology.jpg" data-desc-position="bottom"><img alt="VT Shelter Status Symbology Screenshot" src="../../images/maps/vt-shelters-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Shelter Status Updates</p>
+<p>VT shelter status is manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> via WebEOC. Verify current status with <abbr title="Vermont Agency of Human Services">AHS</abbr> before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>Flood Recovery Centers</summary>
+<p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&amp;sublayer=3"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> during activations</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>name</code>: Center name</li>
+<li><code>address</code>: Full address</li>
+<li><code>center_type</code>: State Disaster Recovery Center (SDRC), Federal Disaster Recovery Center (FDRC)</li>
+<li><code>center_status</code>: Today, Past, Future</li>
+<li><code>manager_name</code>: Center manager</li>
+<li><code>manager_phone</code>: Manager phone number</li>
+<li><code>start_date</code>: Center opening date</li>
+<li><code>end_date</code>: Center closing date</li>
+<li><code>fema_present</code>: <abbr title="Federal Emergency Management Agency">FEMA</abbr> representative at center (Yes, No)</li>
+<li><code>ahs_present</code>: VT Agency of Human Services representative at center (Yes, No)</li>
+<li><code>redcross_present</code>: Red Cross representative at center (Yes, No)</li>
+<li><code>sal_army_present</code>: Salvation Army representative at center (Yes, No)</li>
+<li><code>dfr_present</code>: VT Department of Financial Regulation representative at center (Yes, No)</li>
+<li><code>dfs_present</code>: VT Division of Fire Safety representative at center (Yes, No)</li>
+<li><code>uw_present</code>: United Way representative at center (Yes, No)</li>
+<li><code>vdol_present</code>: VT Department of Labor representative at center (Yes, No)</li>
+<li><code>aoe_present</code>: VT Agency of Education representative at center (Yes, No)</li>
+<li><code>esd_present</code>: VT Economic Services Division representative at center (Yes, No)</li>
+<li><code>da_present</code>: VT Designgated Agencies for Mental Health representative at center (Yes, No)</li>
+<li><code>vdh_present</code>: VT Department of Health representative at center (Yes, No)</li>
+<li><code>days_open</code>: Mondays &amp; Fridays, Tuesdays &amp; Fridays, Wednesday &amp; Sundays, Thursdays</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>Status</code><br>
+Icon: Shelter symbol imported from <a href="https://esri-styles.maps.arcgis.com/home/item.html?id=b75a84b25d084eefadb87b57c50939f6"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Public Safety Stylesheet</a><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-frc-symbology.jpg" data-desc-position="bottom"><img alt="VT Recovery Center Status Symbology Screenshot" src="../../images/maps/vt-frc-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Recovery Center Status Updates</p>
+<p>VT recovery center status is manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> via WebEOC. Verify current status with <abbr title="Vermont Agency of Human Services">AHS</abbr> before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>VT 511 Waze Reports</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/cb6eDXWVgAvVXeIK/arcgis/rest/services/Vermont_511_Waze_Reports_20250826_232835501446/FeatureServer/0">VT 511</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Needs to be updated using a Python Notebook <a href="https://vtem.maps.arcgis.com/home/item.html?id=8c41769fbdba404695350997f3cfb543">hosted in <abbr title="Vermont Emergency Management">VEM</abbr>'s <abbr title="ArcGIS Online">AGO</abbr></a></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>description</code>: Summary of incident</li>
+<li><code>street</code>: Street address</li>
+<li><code>city</code>: Vermont City/Town</li>
+<li><code>last_update</code>: Last update time</li>
+<li><code>report_type</code>: Incident type (e.g., construction, accident, etc.)</li>
+<li><code>report_time</code>: Original report time</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>report_type</code><br>
+Icon: Point symbol from <abbr title="Environmental Systems Research Institute">ESRI</abbr> basic points<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-511-waze-symbology.jpg" data-desc-position="bottom"><img alt="VT 511 Incidents Symbology Screenshot" src="../../images/maps/vt-511-waze-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">VT 511 Waze Updates</p>
+<p>During an <abbr title="State Emergency Operations Center">SEOC</abbr> activation, this layer needs be upted by running a Python notebook to dispaly up-to-date information.<br><br>There is often a delay in closing out VT 511 waze reports. Verify current status with live <a href="https://newengland511.org/region/Vermont">VT 511 website</a> before directing individuals.</p>
+</div>
+</details>
+<h3 id="external-sources">External Sources<a class="headerlink" href="#external-sources" title="Permanent link">¶</a></h3>
+<p><em>The following layers are consumed from external, authoritative sources. These sources include Vermont agencies and departments and external partners like the <abbr title="National Weather Service">NWS</abbr>, <abbr title="United States Geological Survey">USGS</abbr>, <abbr title="Federal Emergency Management Agency">FEMA</abbr>, etc.</em></p>
+<details class="info">
+<summary>Cooling Sites</summary>
+<p><strong>Source:</strong> <a href="https://maps.healthvermont.gov/arcgis/rest/services/VDH/EnvHealthCoolingSites_Public/MapServer/0"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Manually updated by <abbr title="Vermont Department of Health">VDH</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>SiteName</code>: Cooling center location name</li>
+<li><code>SiteType</code>: Shelter location type (e.g., Recreational Center, Library, Police Department, etc.)</li>
+<li><code>SiteTypeMap</code>: Indoor cooling site - open during normal hours, Occasional cooling facilities (call first), Recreation sites with water access that usually charges an entry fee, Free recreation sites with water access.</li>
+<li><code>ADACompliant</code>: Yes, No, Unknown</li>
+<li><code>Address</code>: Street address</li>
+<li><code>City</code>: Town name</li>
+<li><code>County</code>: Vermont county</li>
+<li><code>BeachClosure</code>: Open, Closed, Unknown</li>
+<li><code>ContactPhone</code>: Site phone number</li>
+<li><code>CoolingCenter</code>: Yes, No</li>
+<li><code>EntryFee</code>: Yes, No, Unknown</li>
+<li><code>Extended Hours</code>: Yes, No, Possible, call to check, Possible during an emergency, Possible during a heat emergency, Unknown</li>
+<li><code>GeneratorOnSite</code>: Yes, No, Unknown</li>
+<li><code>HoursOfOperation</code>: Site hours of operation (variable)</li>
+<li><code>OtherAmenities</code>: Books and games, Movies, Showers, Wi-fi, Unknown</li>
+<li><code>OtherCoolingCenterAmenities</code>: Seating in shade, Space for pets, None, Unknown, Shade Tent, etc.</li>
+<li><code>OvernightShelterFacilities</code>: Yes, No, Unknown</li>
+<li><code>Parking</code>: Yes, No, Unknown</li>
+<li><code>PetFacilities</code>: Yes, No, No, but pets are welcome outside, Service animals only</li>
+<li><code>PowerForMedicalEquipment</code>: Yes, No, Unknown</li>
+<li><code>PublicTransportation</code>: Yes, No, Unknown</li>
+<li><code>RefrigeratorForMedications</code>: Yes, No, Unknown</li>
+<li><code>RestroomsAvailable</code>: Yes, No, Unknown</li>
+<li><code>SitesCyanoReported</code>: # of cyanobacteria reports for site</li>
+<li><code>SuncreenDispenser</code>: Yes, No, Unknown</li>
+<li><code>VDHDistrict</code>: Defined by Vermont counties</li>
+<li><code>WaterAvailable</code>: Yes, No, Unknown</li>
+<li><code>Website</code>: Cooling site website if available</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>SiteTypeMap</code><br>
+Icon: Geometric symbols imported from <abbr title="Environmental Systems Research Institute">ESRI</abbr> basic points<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-cooling-sites-symbology.jpg" data-desc-position="bottom"><img alt="VT Cooling Center Symbology Screenshot" src="../../images/maps/vt-cooling-sites-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Cooling Center Updates</p>
+<p>Cooling site information is manually updated <abbr title="Vermont Department of Health">VDH</abbr>. Verify current status with <abbr title="Vermont Department of Health">VDH</abbr> before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>Red Cross Trailer Locations</summary>
+<p><strong>Source:</strong> <a href="https://services.arcgis.com/pGfbNJoYypmNq86F/ArcGIS/rest/services/ARCNNETrailerLocations/FeatureServer/0">Red Cross</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Manually updated by ARC during activations</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>ARC_Use</code>: Distribution of Emergency Supplies, Logistics Trailer, Shelter Trailer, Logistics Trailer - Pet, Logistics Trailer - Mass Casualty</li>
+<li><code>Deployed_Location_Name</code>: Name of location where trailer is deployed</li>
+<li><code>DL_Address</code>: Street address of deployed location</li>
+<li><code>DL_City</code>: City/Town of deployed location</li>
+<li><code>DL_County</code>: County of deployed location</li>
+<li><code>DL_Zip_Code</code>: Zip of deployed location</li>
+<li><code>Housed_Location_Name</code>: Name of location where trailer is normally housed</li>
+<li><code>HL_Address</code>: Street address of housed location</li>
+<li><code>HL_City</code>: City/Town of housed location</li>
+<li><code>HL_County</code>: County of housed location</li>
+<li><code>HL_Zip_Code</code>: Zip of housed location</li>
+<li><code>Status</code>: Available, Unavailable</li>
+<li><code>Tag</code>: Trailer license plate #</li>
+<li><code>Tag_State</code>: State where trailer is registered</li>
+<li><code>Temporary_Location</code>: Temporary location, undeployed</li>
+<li><code>Element_Unit#</code>: Red Cross trailer ID number</li>
+<li><code>Axles</code>: Single, Double</li>
+<li><code>Tow_Ball_Size</code>: 1 7/8", 2", 2 5/16", 2"</li>
+<li><code>VIN</code>: Trailer VIN number</li>
+<li><code>Year_Man_Series_Model</code>: Year, Manufacturer, Series/Model</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded using single symbol style<br>
+Icon: Emergency services symbol from <abbr title="Environmental Systems Research Institute">ESRI</abbr> basic points<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/arc-trailers-symbology.jpg" data-desc-position="bottom"><img alt="ARC Trailer Symbology Screenshot" src="../../images/maps/arc-trailers-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Trailer Status Updates</p>
+<p>Red Cross trailer status is manually updated by ARCC. Verify current status with ARC before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>VT 511 Incidents</summary>
+<p><strong>Source:</strong> <a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2">VT 511</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Update Method:</strong> Regularly updated by VTrans</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>description</code>: Summary of incident</li>
+<li><code>city</code>: Vermont City/Town</li>
+<li><code>createdtimestamp</code>: Time of creation</li>
+<li><code>direction</code>: Cardinal direction of lane travel (East, West, North, South)</li>
+<li><code>severity</code>: Primary Location, Alternative Location</li>
+<li><code>startdate</code>: Indicent start date</li>
+<li><code>starttime</code>: Incident start time</li>
+<li><code>enddate</code>: Indicent end date</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>Status</code><br>
+Icon: Accident symbol imported from <a href="https://esri-styles.maps.arcgis.com/home/item.html?id=b75a84b25d084eefadb87b57c50939f6"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Public Safety Stylesheet</a><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-511-incidents-symbology.jpg" data-desc-position="bottom"><img alt="VT 511 Incidents Symbology Screenshot" src="../../images/maps/vt-511-incidents-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">VT 511 Updates</p>
+<p>There is often a delay in closing out VT 511 incidents. Verify current status with live <a href="https://newengland511.org/region/Vermont">VT 511 website</a> before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>VT 511 CCTV Images</summary>
+<p><strong>Source:</strong> <a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/0">VT 511</a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Update Method:</strong> Automatically updated by VTrans CCTV feature layer service</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>name</code>: Name of location where CCTV camera is located</li>
+<li><code>roadway</code>: Road/highway name where CCTV is located</li>
+<li><code>direction</code>: Direction camera is viewing</li>
+<li><code>status</code>: DeviceOnline, DeviceOffline</li>
+<li><code>Timestamp</code>: Timestamp of most recent image</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>report_type</code><br><br>
+Icon: Camera symbol from <abbr title="Environmental Systems Research Institute">ESRI</abbr> basic points<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-511-cctv-symbology.jpg" data-desc-position="bottom"><img alt="VT 511 CCTV Symbology Screenshot" src="../../images/maps/vt-511-cctv-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">VT 511 CCTV Updates</p>
+<p>CCTV images are taken at intervals throughout the day, so every image is out-of-date by the time it's being viewed. Verify current status with DPS or VTrans before directing individuals.</p>
+</div>
+</details>
+<details class="info">
+<summary>USA Storm Reports (past 24 hours)</summary>
+<p><strong>Source:</strong> <a href="https://rhvpkkiftonktxq3.svcs9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/NOAA_storm_reports_v1/FeatureServer/4"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br> 
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br> 
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>INCIDENT_TYPE</code>: Type of storm incident (e.g., Heavy Snow, Snow, Sleet, Hail, etc.)</li>
+<li><code>LOCATION</code>: Description of location</li>
+<li><code>INCIDENT_DATETIME</code>: Timestamp for storm report</li>
+<li><code>COUNTY</code>: County name</li>
+<li><code>STATE</code>: State name</li>
+<li><code>COMMENTS</code>: Relevant comments</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>report_type</code><br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-storm-report-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Storm Report Symbology Screenshot" src="../../images/maps/noaa-storm-report-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>HOURS_OLD</code> and <code>location</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-storm-report-filter.jpg" data-desc-position="bottom"><img alt="NOAA Storm Reports Filter Screenshot" src="../../images/maps/noaa-storm-report-filter.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Data Limitations</p>
+<p>Weather alert data may be delayed during severe weather events when <abbr title="National Weather Service">NWS</abbr> systems experience heavy load.</p>
+</div>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Hail Storm Reports (past 24 hours)</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br> 
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br> 
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>LOCATION</code>: Description of location</li>
+<li><code>UTC_DATETIME</code>: Timestamp for hail report</li>
+<li><code>COUNTY</code>: County name</li>
+<li><code>STATE</code>: State name</li>
+<li><code>COMMENTS</code>: Relevant comments</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-hail-report-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Hail Report Symbology Screenshot" src="../../images/maps/noaa-hail-report-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>STATE</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-hail-report-filter.jpg" data-desc-position="bottom"><img alt="NOAA HAIL Storm Reports Filter Screenshot" src="../../images/maps/noaa-hail-report-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Wind Storm Reports (past 24 hours)</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>LOCATION</code>: Description of location</li>
+<li><code>UTC_DATETIME</code>: Timestamp for hail report</li>
+<li><code>COUNTY</code>: County name</li>
+<li><code>STATE</code>: State name</li>
+<li><code>COMMENTS</code>: Relevant comments</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-wind-report-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Wind Report Symbology Screenshot" src="../../images/maps/noaa-wind-report-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>STATE</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-wind-report-filter.jpg" data-desc-position="bottom"><img alt="NOAA Wind Storm Reports Filter Screenshot" src="../../images/maps/noaa-wind-report-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary>Current <abbr title="National Weather Service">NWS</abbr> Events</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon 
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>Event</code>: <abbr title="National Weather Service">NWS</abbr> event type (e.g., Flash Flood Watch, Fire Warning, Winter Weather Advisory, etc.)<br></li>
+<li><code>Affected</code>: Geographic areas affected</li>
+<li><code>Summary</code>: Concatonated summary of event, time period of event, and issuing <abbr title="National Weather Service">NWS</abbr> office.</li>
+<li><code>Updated</code>: Time/date last updated</li>
+<li><code>Start</code>: Start time of event notice</li>
+<li><code>End</code>: End time of event notice</li>
+<li><code>Description</code>: Detailed description of the <abbr title="National Weather Service">NWS</abbr> event</li>
+<li><code>Instruction</code>: Authoritative instructions for how to prepare/respond to <abbr title="National Weather Service">NWS</abbr> event</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Color-coded by <code>Subject Type</code><br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-current-nws-events-symbology.jpg" data-desc-position="bottom"><img alt="Current NWS Events Symbology Screenshot" src="../../images/maps/noaa-current-nws-events-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>Summary Overview</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-current-nws-events-filter.jpg" data-desc-position="bottom"><img alt="NOAA Current NWS Events Filter Screenshot" src="../../images/maps/noaa-current-nws-events-filter.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Data Limitations</p>
+<p>Weather alert data may be delayed during severe weather events when <abbr title="National Weather Service">NWS</abbr> systems experience heavy load. Polygons represent alert zones, not exact impact areas.</p>
+</div>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Severe Thunderstorm Warnings</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>UTC_ISSUE</code>: Date/time warning was issued</li>
+<li><code>UTC_EXPIRE</code>: Date/time warning expires</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-severe-thunderstorm-warning-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Severe Thunderstorm Warnings Symbology Screenshot" src="../../images/maps/noaa-severe-thunderstorm-warning-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>to be determined</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/noaa-severe-thunderstorm-warning-filter.jpg" data-desc-position="bottom"><img alt="NOAA Severe Thunderstorm Warnings Filter Screenshot" src="../images/maps/noaa-severe-thunderstorm-warning-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Tornado Warnings</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/1"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>UTC_ISSUE</code>: Date/time warning was issued</li>
+<li><code>UTC_EXPIRE</code>: Date/time warning expires</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-tornado-warning-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Tornado Warnings Symbology Screenshot" src="../../images/maps/noaa-tornado-warning-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>to be determined</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/noaa-tornado-warning-filter.jpg" data-desc-position="bottom"><img alt="NOAA Tornado Warnings Filter Screenshot" src="../images/maps/noaa-tornado-warning-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Flash Flood Warnings</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>UTC_ISSUE</code>: Date/time warning was issued</li>
+<li><code>UTC_EXPIRE</code>: Date/time warning expires</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-flash-flood-warning-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Flash Flood Warnings Symbology Screenshot" src="../../images/maps/noaa-flash-flood-warning-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>to be determined</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/noaa-flash-flood-warning-filter.jpg" data-desc-position="bottom"><img alt="NOAA Flash Flood Warnings Filter Screenshot" src="../images/maps/noaa-flash-flood-warning-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Special Marine Warnings</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/3"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>UTC_ISSUE</code>: Date/time warning was issued</li>
+<li><code>UTC_EXPIRE</code>: Date/time warning expires</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/noaa-special-marine-warning-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Special Marine Warnings Symbology Screenshot" src="../../images/maps/noaa-special-marine-warning-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>to be determined</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/noaa-special-marine-warning-filter.jpg" data-desc-position="bottom"><img alt="NOAA Special Marine Warnings Filter Screenshot" src="../images/maps/noaa-special-marine-warning-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary>Active Hurricanes, Cyclones, and Typhoons</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
+<strong>Geometry Type:</strong> Points, Lines, Polygons 
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Grouped Feature Layer</strong><br>
+This grouped service contains the following layers, which depict active hurricanes and associated storm characteristics.</p>
+<ul>
+<li>Forecast Position</li>
+<li>Observied Position</li>
+<li>Forecast Track</li>
+<li>Observed Track</li>
+<li>Forecast Error Cone and Danger Area</li>
+<li>Watches and Warnings</li>
+<li>Tropical Storm Force (34kts)</li>
+<li>Tropical Storm Force (50kts)</li>
+<li>Tropical Storm Force (64kts+)</li>
+<li>Raw 1 10th Degree Data (All)</li>
+<li>Observed Wind Swath</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Point, Polyline, Polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/noaa-active-hurricanes-symbology.jpg" data-desc-position="bottom"><img alt="NOAA Active Hurricanes, Cyclones, and Typhoons Group Symbology" src="../images/maps/noaa-active-hurricanes-symbology.jpg"></a></p>
+</details>
+<details class="info">
+<summary>Vermont Fire Danger (Daily)</summary>
+<p><strong>Source:</strong> <a href="https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/50"><abbr title="Vermont Department of Forests, Parks, and Recreation">VTFPR</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Update Method:</strong> Updated daily by Vermont FPR</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>FIREDANGER</code>: LOW, MODERATE, HIGH, VERY HIGH, EXTREME</li>
+<li><code>FDRA</code>: Fire danger rating area identifier (e.g., FDRA2, FDRA3, etc.)</li>
+<li><code>NOTES</code>: Relevant notes shared by VT FPR staff</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks, and Recreation">VTFPR</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-fire-danger-symbology.jpg" data-desc-position="bottom"><img alt="VT Fire Danger Symbology Screenshot" src="../../images/maps/vt-fire-danger-symbology.jpg"></a></p>
+</details>
+<details class="info">
+<summary>Current Wildfire Incidents</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/0"><abbr title="National Interagency Fire Center">NIFC</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Manually updated by the <abbr title="National Interagency Fire Center">NIFC</abbr></p>
+<p><strong>Pop-Up Attributes: (based on Wildfire Data Dictionary - <a href="../IRWIN_Data_Service_Users_Guide.pdf"><abbr title="Integrated Reporting of Wildfire Information">IRWIN</abbr> SCHEMA</a>)</strong></p>
+<ul>
+<li><code>INCIDENTNAME</code>: Fire incident name</li>
+<li><code>UNIQUEFIREIDENTIFIER</code>: Unique identifier assigned to each wildland fire</li>
+<li><code>CALCULATEDACRES</code>: the number of acres within the current perimeter of a specific, individual incident, including unburned and unburnable islands</li>
+<li><code>DAILYACRES</code>: A measure of daily acres reported for a fire. </li>
+<li><code>CAUSE</code>: Broad classification of the reason the fire occurred identified as human, natural or unknown</li>
+<li><code>CONTROLDATETIME</code>: The date and time a wildfire was declared under control</li>
+<li><code>FINALACRES</code>: Reported final acreage of incident</li>
+<li><code>FIREDISCOVERYDATETIME</code>: The date and time a fire was reported as discovered or confirmed to exist. May also be the start date for reporting purposes</li>
+<li><code>CONTAINMENTDATETIME</code>: The date and time a wildfire was declared contained</li>
+<li><code>FIREOUTDATETIME</code>: The date and time when a fire is declared out</li>
+<li><code>MODIFIEDONDATETIME</code>: Date/time that the <abbr title="Integrated Reporting of Wildfire Information">IRWIN</abbr> Incident record was last modified</li>
+<li><code>PERCENTCONTAINED</code>: Indicates the percent of incident area that is no longer active.</li>
+<li><code>FATALITIES</code>: The total number of deaths of personnel assigned to an incident</li>
+<li><code>INJURIES</code>: The total number of reportable occupational injuries and illnesses that occurred in conjunction with an incident</li>
+<li><code>RESIDENCESDESTROYED</code>: The total number of residences destroyed, or damaged to an extent requiring rebuilding, as a result of a fire</li>
+<li><code>OTHERSTRUCTURESDESTROYED</code>: The total number of structures, other than residences, destroyed as a result of a fire</li>
+<li><code>TOTALINCIDENTPERSONNEL</code>: The total number of personnel assigned. Includes overhead, crewmembers, helicopter crewmember, engine crewmembers, camp crew people, etc.</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p>Fire symbol imported from <a href="https://esri-styles.maps.arcgis.com/home/item.html?id=b75a84b25d084eefadb87b57c50939f6"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Public Safety Stylesheet</a><br>
+Icon: Pre-defined symbology by <abbr title="National Interagency Fire Center">NIFC</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-wildfire-incidents-symbology.jpg" data-desc-position="bottom"><img alt="Current Wildfire Incidents Symbology Screenshot" src="../../images/maps/vt-wildfire-incidents-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Current Wildfire Incidents Updates</p>
+<p>This layer may not reflect the most current wildfire locations (there is often a delay in updating).</p>
+</div>
+</details>
+<details class="info">
+<summary>Current Wildfire Perimeters</summary>
+<p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/1"><abbr title="National Interagency Fire Center">NIFC</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Manually updated by the <abbr title="National Interagency Fire Center">NIFC</abbr></p>
+<p><strong>Pop-Up Attributes: (based on Wildfire Data Dictionary - <a href="../IRWIN_Data_Service_Users_Guide.pdf"><abbr title="Integrated Reporting of Wildfire Information">IRWIN</abbr> SCHEMA</a>)</strong></p>
+<ul>
+<li><code>INCIDENTNAME</code>: The incident name as stored in the polygon source record</li>
+<li><code>CALCULATEDACRES</code>: the number of acres within the current perimeter of a specific, individual incident, including unburned and unburnable islands</li>
+<li><code>CREATEDATE</code>: System generated date for the date time the source polygon record was created (stored in UTC)</li>
+<li><code>UNITID</code>: NWCG Unit Identifier to identify the unit with jurisdiction for the land where the point of origin of a fire falls</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by <abbr title="National Interagency Fire Center">NIFC</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-wildfire-perimeters-symbology.jpg" data-desc-position="bottom"><img alt="Current Wildfire Perimeters Symbology Screenshot" src="../../images/maps/vt-wildfire-perimeters-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Current Wildfire Perimeters Updates</p>
+<p>This layer may not reflect the most current wildfire perimeters (there is often a delay in updating).</p>
+</div>
+</details>
+<details class="info">
+<summary>Designated Counties</summary>
+<p><strong>Source:</strong> <a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/0"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Manually updated by the <abbr title="Federal Emergency Management Agency">FEMA</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>dec_number</code>: Complete <abbr title="Federal Emergency Management Agency">FEMA</abbr> disaster declaration identification number</li>
+<li><code>designate</code>: The type of assistance designated in declaration or amendment (e.g., individual assistance, public assistance)</li>
+<li><code>name</code>: Designated county name</li>
+<li><code>dec_num_int</code>: <abbr title="Federal Emergency Management Agency">FEMA</abbr> disaster declaration identification number</li>
+<li><code>fema_postdate</code>: The date the data was posted or updated in the system</li>
+<li><code>amd_date</code>: The amendment date of a <abbr title="Federal Emergency Management Agency">FEMA</abbr> disaster declaration</li>
+</ul>
+<p><strong>Attribute Expressions (Arcade):</strong><br><br>
+The original <code>dec_num</code> field was rounded to ensure the value displayed properly using the <code>dec_num_int</code> field.<br>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    Text($feature.dec_num, '#')
+</span></code></pre></div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/fema-designated-counties-dec_num-arcade.jpg" data-desc-position="bottom"><img alt="FEMA Designated Counties Attribute Expression Screenshot " src="../../images/maps/fema-designated-counties-dec_num-arcade.jpg"></a><p></p>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/fema-designated-counties-symbology.jpg" data-desc-position="bottom"><img alt="FEMA Designated Counties Symbology Screenshot" src="../../images/maps/fema-designated-counties-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Designated Counties Updates</p>
+<p>This layer may not reflect the most current disaster declaration during an ongoing <abbr title="State Emergency Operations Center">SEOC</abbr> activation (there is often a delay in updating).</p>
+</div>
+</details>
+<details class="info">
+<summary>Emergency Designated Counties</summary>
+<p><strong>Source:</strong> <a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/1"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Manually updated by the <abbr title="Federal Emergency Management Agency">FEMA</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>dec_number</code>: Complete <abbr title="Federal Emergency Management Agency">FEMA</abbr> disaster declaration identification number</li>
+<li><code>designate</code>: The type of assistance designated in declaration or amendment (e.g., individual assistance, public assistance)</li>
+<li><code>name</code>: Designated county name</li>
+<li><code>dec_num_int</code>: <abbr title="Federal Emergency Management Agency">FEMA</abbr> disaster declaration identification number</li>
+<li><code>fema_postdate</code>: The date the data was posted or updated in the system</li>
+</ul>
+<p><strong>Attribute Expressions (Arcade):</strong><br><br>
+The original <code>dec_num</code> field was rounded to ensure the value displayed properly using the <code>dec_num_int</code> field.<br>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    Text($feature.dec_num, '#')
+</span></code></pre></div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/fema-designated-counties-dec_num-arcade.jpg" data-desc-position="bottom"><img alt="FEMA Emergency Designated Counties Attribute Expression Screenshot " src="../../images/maps/fema-designated-counties-dec_num-arcade.jpg"></a><p></p>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/fema-emergency-designated-counties-symbology.jpg" data-desc-position="bottom"><img alt="FEMA Emergency Designated Counties Symbology Screenshot" src="../../images/maps/fema-emergency-designated-counties-symbology.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Emergency Designated Counties Updates</p>
+<p>This layer may not reflect the most current disaster declaration during an ongoing <abbr title="State Emergency Operations Center">SEOC</abbr> activation (there is often a delay in updating).</p>
+</div>
+</details>
+<details class="info">
+<summary>AirNow Air Quality</summary>
+<p><strong>Source:</strong> <a href="https://www.arcgis.com/home/item.html?id=2d718d2733a74d1689d72b922c0ac4f4"><abbr title="Environmental Protection Agency">EPA</abbr></a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Automatically updated by the <abbr title="Environmental Protection Agency">EPA</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>SITENAME</code>: The text name of the monitoring station (e.g., "Rutland")</li>
+<li><code>Site Operational Status</code>: Indicates if the monitor is Active or Inactive</li>
+<li><code>Data Source</code>: SThe agency managing the monitor (e.g., "Vermont Dept. of Environmental Conservation")</li>
+<li><code>Elevation</code>: Ground elevation of the monitoring site above mean sea level (AMSL), usually measured in meters</li>
+<li><code>MonitorType</code>: Indicates whether the station is a permanent, fixed installation or a temporary mobile unit</li>
+<li><code>OZONE</code>: Current Ozone concentration in parts per billion (ppb)</li>
+<li><code>OZONE AQI</code>: The calculated Air Quality Index (AQI) specifically for ozone</li>
+<li><code>Ozone &amp; PM AQI</code>: represents the highest AQI value among the available pollutants at that site. This is the value typically used to color-code points on a map because it represents the "controlling" pollutant</li>
+<li><code>Ozone Measured at Site</code>: Indicates whether the station is equipped with an Ozone sensor (0 = no, 1 = yes)</li>
+<li><code>PM2.5</code>: Current Particulate Matter &lt; 2.5 microns in micrograms per cubic meter (µg/m³)</li>
+<li><code>PM2.5 AQI</code>: The calculated Air Quality Index (AQI) specifically for PM2.5</li>
+<li><code>Pm2.5 Measured at Site</code>: Indicates whether the station is equipped with an PM2.5 sensor (0 = no, 1 = yes)</li>
+<li><code>ValidTime</code>: The specific hour (time slice) that the data represents</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point<br>
+Icon: Pre-defined symbology by <abbr title="Environmental Protection Agency">EPA</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/epa-air-now-symbology.jpg" data-desc-position="bottom"><img alt="AirNow Air Quality Symbology Screenshot" src="../../images/maps/epa-air-now-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>State Name</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/epa-air-now-filter.jpg" data-desc-position="bottom"><img alt="AirNow Air Quality Filter Screenshot" src="../../images/maps/epa-air-now-filter.jpg"></a></p>
+</details>
+<details class="info">
+<summary>Candada Wildfire Smoke Forecast</summary>
+<p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=ba26a81a0133460799f155826342806a"><abbr title="Environmental Systems Research Institute">ESRI</abbr></a><br>
+<strong>Geometry Type:</strong> n/a (Image Service)<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Automatically updated by <abbr title="Environmental Systems Research Institute">ESRI</abbr></p>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> Image Service<br>
+Color Ramp: Pre-defined symbology by <abbr title="Environmental Systems Research Institute">ESRI</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/esri-canada-wildfire-forecast-symbology.PNG" data-desc-position="bottom"><img alt="Canada Wildfire Smoke Forecast Symbology Screenshot" src="../../images/maps/esri-canada-wildfire-forecast-symbology.PNG"></a></p>
+</details>
+<details class="info">
+<summary>Public Reports - <abbr title="Condition Monitoring Observer Reports">CMOR</abbr></summary>
+<p><strong>Source:</strong> <a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/CMOR_2022_Public/FeatureServer/0"><abbr title="Condition Monitoring Observer Reports">CMOR</abbr></a><br>
+<strong>Geometry Type:</strong> Point<br>
+<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Update Method:</strong> Automatically updated by the <abbr title="Condition Monitoring Observer Reports">CMOR</abbr> via public submissions</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>Description and/or caption information</code>: User submitted observations</li>
+<li><code>Select a county</code>: County of submission/observation</li>
+<li><code>What is the date?</code>: Date of submission</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point<br>
+Icon: Pre-defined symbology by <abbr title="Condition Monitoring Observer Reports">CMOR</abbr><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/cmor-public-reports-symbology.jpg" data-desc-position="bottom"><img alt="CMOR Public Reports Symbology Screenshot" src="../../images/maps/cmor-public-reports-symbology.jpg"></a></p>
+<p><strong>Filter:</strong></p>
+<p>Filtered by <code>Select a state/territory</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/cmor-public-reports-filter.jpg" data-desc-position="bottom"><img alt="CMOR Public Reports Filter Screenshot" src="../../images/maps/cmor-public-reports-filter.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="Condition Monitoring Observer Reports">CMOR</abbr> Updates</p>
+<p><abbr title="Condition Monitoring Observer Reports">CMOR</abbr> submissions are provided via public submission and should be verified prior to mobilizing resources.</p>
+</div>
+</details>
+<details class="info">
+<summary>US Drought Monitor - Current</summary>
+<p><strong>Source:</strong> <a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0">USDM</a><br>
+<strong>Geometry Type:</strong> Polygon<br>
+<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Update Method:</strong> Manually updated (weekly) by the National Drought Mitigation Center</p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>DM</code>: Drought Monitor Category (e.g., Abnormally Dry, Severe Drought, etc.)</li>
+<li><code>DMArea_Units</code>: The raw area of the drought polygon in square miles (mi²)</li>
+<li><code>CatagoricalPerct</code>: The percentage of the area exclusively in each specific drought category</li>
+<li><code>CumulativePerct</code>: This is the "or worse" statistic. It represents the percentage of the area in the specific drought category plus all more severe categories</li>
+<li><code>ReleaseDate</code>: The release date of the updated feature layer</li>
+<li><code>ValidStart</code>: The start date of the observation week</li>
+<li><code>ValidEnd</code>: The end date of the observation week</li>
+</ul>
+<p><strong>Attribute Expressions (Arcade):</strong><br><br>
+The original <code>DMArea</code> field was rounded and units were added for easier interpretation using the <code>DMArea_Units</code> field.<br>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    Text($feature.DMArea, '#,###') + " mi²"
+</span></code></pre></div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/drought-monitor-arcade.jpg" data-desc-position="bottom"><img alt="Drought Monitor Attribute Expression Screenshot " src="../../images/maps/drought-monitor-arcade.jpg"></a><p></p>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygon<br>
+Icon: Pre-defined symbology by USDM<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/drought-monitor-symbology.jpg" data-desc-position="bottom"><img alt="Drought Monitor Symbology Screenshot" src="../../images/maps/drought-monitor-symbology.jpg"></a></p>
+</details>
+<hr>
+<h3 id="basemap">Basemap<a class="headerlink" href="#basemap" title="Permanent link">¶</a></h3>
+<p>Default: <strong>Topographic</strong> for visualizing data relative to Vermont's variable topography</p>
+<h2 id="performance-notes">Performance Notes<a class="headerlink" href="#performance-notes" title="Permanent link">¶</a></h2>
+<p>For optimal performance with this map:</p>
+<ul>
+<li>Recommended to keep 4-5 layers active simultaneously</li>
+<li>Turn off reference layers when not needed</li>
+<li>Use time filters to limit historical data queries</li>
+</ul>
+<h2 id="related-documentation">Related Documentation<a class="headerlink" href="#related-documentation" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="../weather-map/">Weather Map</a> - More detailed weather data</li>
+<li><a href="../arcade/symbology.md">Arcade Symbology</a> - Expression details</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+      
+        <script src="../../javascripts/tables-init.js"></script>
+      
+        <script src="../../javascripts/print-button.js"></script>
+      
+    
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the main header container
+        var headerInner = document.querySelector('.md-header__inner');
+        
+        if (headerInner) {
+            // Create a new container for VEM logo
+            var logoDiv = document.createElement('div');
+            logoDiv.className = 'vem-header-logo';
+            
+            // Add the VEM logo to the header and make it clickable to the VEM homepage
+            logoDiv.innerHTML = `
+              <a href="https://vem.vermont.gov" target="_blank" style="display: flex; align-items: center; margin-left: 1rem;">
+                <img src="../../images/pages/vem_logo_0.png" alt="VEM Logo" style="height: 38px; width: auto; max-width: 150px;">
+              </a>
+            `;
+            
+            // Append the logo to the far right of the header
+            headerInner.appendChild(logoDiv);
+        }
+    });
+  </script>
+
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
