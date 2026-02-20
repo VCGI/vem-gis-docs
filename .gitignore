@@ -1,0 +1,29 @@
+# MkDocs
+   site/
+
+   # Python
+   __pycache__/
+   *.py[cod]
+   *$py.class
+   .Python
+   *.so
+
+   # Virtual environments
+   venv/
+   env/
+   .venv/
+   ENV/
+
+   # IDEs
+   .vscode/
+   .idea/
+   *.swp
+   *.swo
+   *~
+
+   # OS files
+   .DS_Store
+   Thumbs.db
+
+   # MkDocs cache
+   .cache/

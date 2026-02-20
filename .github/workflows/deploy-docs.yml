@@ -1,0 +1,86 @@
+name: Deploy MkDocs Sites to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'exb/cop/**'
+      # Placeholder for future projects here:
+      # - 'exb/cop-public/**'
+      # - 'other-project/**'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-cop:
+    name: Deploy VEM COP Documentation
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, 'cop') || contains(join(github.event.commits.*.modified, ' '), 'exb/cop')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for git info
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Install MkDocs and plugins
+        run: |
+          pip install --upgrade pip
+          pip install mkdocs-material
+          pip install mkdocs-glightbox
+          pip install mkdocs-print-site-plugin
+          pip install mkdocs-jupyter
+      
+      - name: Build and Deploy COP Docs
+        run: |
+          cd exb/cop
+          mkdocs gh-deploy --force --config-file mkdocs.yml --remote-branch gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Template for future public facing cop - uncomment and modify when needed
+  # deploy-cop-public:
+  #   name: Deploy COP Public Documentation
+  #   runs-on: ubuntu-latest
+  #   if: contains(github.event.head_commit.message, 'cop-public') || contains(join(github.event.commits.*.modified, ' '), 'exb/cop-public')
+  #   
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #     
+  #     - name: Set up Python
+  #       uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.11'
+  #     
+  #     - name: Install MkDocs and plugins
+  #       run: |
+  #         pip install --upgrade pip
+  #         pip install mkdocs-material
+  #         pip install mkdocs-glightbox
+  #         pip install mkdocs-print-site-plugin
+  #         # Add any additional plugins for this project
+  #     
+  #     - name: Build and Deploy COP Public Docs
+  #       run: |
+  #         cd exb/cop-public
+  #         mkdocs gh-deploy --force --config-file mkdocs.yml --remote-branch gh-pages
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

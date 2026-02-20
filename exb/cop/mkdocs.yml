@@ -1,0 +1,127 @@
+site_name: VEM Common Operating Picture Documentation
+site_description: Comprehensive documentation for the Vermont Emergency Management Common Operating Picture Experience Builder application
+site_author: Vermont Emergency Management
+
+# Repository (optional - update with your actual repo URL)
+site_url: https://vcgi.github.io/vem-gis-docs/
+repo_url: https://github.com/VCGI/vem-gis-docs
+repo_name: VCGI/vem-gis-docs
+
+theme:
+  name: material
+  custom_dir: overrides  # Tells MkDocs to look here for custom layouts
+  palette:
+    # Light mode
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs           # Top-level navigation tabs
+    - navigation.sections       # Collapsible sections in sidebar
+    - navigation.expand         # Expand all sections by default
+    - navigation.top            # Back to top button
+    - navigation.tracking       # URL updates as you scroll
+    - search.suggest            # Search suggestions
+    - search.highlight          # Highlight search terms
+    - content.code.copy         # Copy button for code blocks
+    - content.tabs.link         # Link tabbed content
+
+  icon:
+    repo: fontawesome/brands/github
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Maps:
+      - maps/index.md
+      - Situational Awareness Map: maps/situational-awareness-map.md
+      - Weather Map: maps/weather-map.md
+      - Fire Risk Map: maps/fire-risk-map.md
+      - ⚠️ Infrastructure Map: maps/infrastructure-map.md
+  - Pages:                              
+      - pages/index.md
+      - Overview Page: pages/overview-page.md
+      - Weather Page: pages/weather-page.md
+      - Fire Risk Page: pages/fire-risk-page.md
+      - VT Outages Page: pages/vt-outages-page.md
+      - Mass Care Page: pages/mass-care-page.md
+      - ⚠️ Infrastructure Page: pages/infrastructure-page.md
+  - Python Notebooks:
+      - Overview: python-notebooks/index.md
+  - ⚠️ Workflows:
+      - workflows/index.md
+      - Incident Tracking: workflows/incident-tracking.md
+      - Situational Reports: workflows/situational-reports.md
+
+# Plugins
+plugins:
+  - search              # Built-in search functionality
+  - mkdocs-jupyter:
+      ignore_h1_titles: true 
+      execute: false  # Users can view but not run code
+      include_source: true
+  - glightbox
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'Print All Documentation'
+      add_print_site_banner: false
+      add_full_urls: true
+      enumerate_headings: true
+      enumerate_figures: true
+  #- mkdocs-caption #This didn't install correctly
+  #- img2fig
+
+# Markdown extensions
+markdown_extensions:
+  - admonition          # Note/warning/tip boxes
+  - pymdownx.details    # Collapsible admonitions
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:  # Code blocks with syntax highlighting
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:    # Tabbed content
+      alternate_style: true
+  - pymdownx.highlight: # Syntax highlighting
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite  # Inline code highlighting
+  - tables              # Markdown tables
+  - attr_list           # Add attributes to elements
+  - md_in_html          # Markdown inside HTML
+  - def_list            # Definition lists
+  - footnotes           # Footnotes
+  - toc:                # Table of contents
+      permalink: true   # Add link icon to headings
+  - abbr
+  - pymdownx.snippets:
+       check_paths: true
+       auto_append:
+        - docs/includes/abbreviations.md
+
+# Extra CSS
+extra_css:
+  - https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css # For tables
+  - stylesheets/custom.css
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js
+  - javascripts/tables-init.js
+  - javascripts/print-button.js # For printing the page

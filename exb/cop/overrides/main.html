@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the main header container
+        var headerInner = document.querySelector('.md-header__inner');
+        
+        if (headerInner) {
+            // Create a new container for VEM logo
+            var logoDiv = document.createElement('div');
+            logoDiv.className = 'vem-header-logo';
+            
+            // Add the VEM logo to the header and make it clickable to the VEM homepage
+            logoDiv.innerHTML = `
+              <a href="https://vem.vermont.gov" target="_blank" style="display: flex; align-items: center; margin-left: 1rem;">
+                <img src="{{ base_url }}/images/pages/vem_logo_0.png" alt="VEM Logo" style="height: 38px; width: auto; max-width: 150px;">
+              </a>
+            `;
+            
+            // Append the logo to the far right of the header
+            headerInner.appendChild(logoDiv);
+        }
+    });
+  </script>
+{% endblock %}
