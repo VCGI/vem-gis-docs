@@ -805,4 +805,4 @@ For optimal performance with this map:
 ## Related Documentation
 
 - [Weather Map](weather-map.md) - More detailed weather data
-- [Arcade Symbology](../arcade/symbology.md) - Expression details
+- [Fire Risk Map](fire-risk-map.md)

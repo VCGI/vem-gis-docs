@@ -596,4 +596,4 @@ For optimal performance with this map:
 ## Related Documentation
 
 - [Situational Awareness Map](situational-awareness-map.md)
-- [Arcade Expressions](../arcade/index.md)
+- [Fire Risk Map](fire-risk-map.md)

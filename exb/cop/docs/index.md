@@ -23,7 +23,6 @@ The VEM COP is an ArcGIS Experience Builder application that provides real-time 
 
 - [Application Overview](overview.md)
 - [Map Documentation](maps/index.md)
-- [Arcade Expressions](arcade/index.md)
 - [Python Notebooks](python-notebooks/index.md)
 - [User Workflows](workflows/index.md)
 
