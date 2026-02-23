@@ -34,6 +34,10 @@ jobs:
           cd exb/cop
           mkdocs build --site-dir ../../site/cop
       
+      - name: Copy landing page
+        run: |
+          cp index.html site/index.html
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
