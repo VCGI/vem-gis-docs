@@ -1627,7 +1627,7 @@
 <td style="text-align: left;">511 Incidents</td>
 <td style="text-align: left;"><a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2">VT 511</a></td>
 <td style="text-align: left;"><a href="../../images/pages/cop-511-icon.png">Icon</a></td>
-<td style="text-align: left;"><code>COUNT({ObjectID})</code></td>
+<td style="text-align: left;"><code>See Arcade Expression Below</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">Open Shelters</td>
@@ -1670,8 +1670,9 @@
 </div>
 </li>
 </ul>
-<p><strong>Arcade Expression Used in Sidecar Widget</strong>: The following expression was used to visualize the Declared Disasters Indicator counts:<br>
- </p><div class="language-javascript highlight"><span class="filename">Delcared Disasters: Declarations Unique Count</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Specify Declaration Number field name</span>
+<p><strong>Arcade Expressions Used in Sidecar Widget</strong>: <br><br></p>
+<p>The following expression was used to visualize the Declared Disasters Indicator counts:<br>
+ </p><div class="language-javascript highlight"><span class="filename">Declared Disasters: Unique Count</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Specify Declaration Number field name</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fieldName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'dec_number'</span><span class="p">;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Create a FeatureSet containing one feature for each unique value in the specified field</span>
@@ -1679,7 +1680,22 @@
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// Return the count of the unique features.</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">return</span><span class="w"> </span><span class="nx">Count</span><span class="p">(</span><span class="nx">uniqueValues</span><span class="p">);</span>
-</span></code></pre></div><p></p>
+</span></code></pre></div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/fema-declared-disasters-arcade.jpg" data-desc-position="bottom"><img alt="FEMA Sidecar Expression Screenshot " src="../../images/maps/fema-declared-disasters-arcade.jpg"></a>
+<br><br>
+The following expression creates a group based on the incident name and then counts the # of unique groups.<br>
+<div class="language-javascript highlight"><span class="filename">VT 511: Unique Count</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// This script correctly counts the number of unique incidents.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">// Group records by the 'Name' field. A simple statistic is required</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// by the function, but we only care about the groups themselves.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">var</span><span class="w"> </span><span class="nx">incidentGroups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">GroupBy</span><span class="p">(</span><span class="nx">$dataSources</span><span class="p">[</span><span class="s2">"dataSource_2-198e8bab3ca-layer-76-198f5ed1084-layer-48"</span><span class="p">].</span><span class="nx">layer</span><span class="p">,</span><span class="w"> </span><span class="s1">'Name'</span><span class="p">,</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'group_count'</span><span class="p">,</span><span class="w"> </span><span class="nx">expression</span><span class="o">:</span><span class="w"> </span><span class="s1">'1'</span><span class="p">,</span><span class="w"> </span><span class="nx">statistic</span><span class="o">:</span><span class="w"> </span><span class="s1">'COUNT'</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">]);</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1">// Count how many unique groups (incidents) were created.</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">return</span><span class="w"> </span><span class="nx">Count</span><span class="p">(</span><span class="nx">incidentGroups</span><span class="p">);</span>
+</span></code></pre></div>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-511-arcade.jpg" data-desc-position="bottom"><img alt="VT511 Sidecar Expression Screenshot " src="../../images/maps/vt-511-arcade.jpg"></a><p></p>
 </li>
 </ul>
 </details>
