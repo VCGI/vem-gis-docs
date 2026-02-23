@@ -3,7 +3,7 @@ site_description: Comprehensive documentation for the Vermont Emergency Manageme
 site_author: Vermont Emergency Management
 
 # Repository (optional - update with your actual repo URL)
-site_url: https://vcgi.github.io/vem-gis-docs/
+site_url: https://vcgi.github.io/vem-gis-docs/cop/
 repo_url: https://github.com/VCGI/vem-gis-docs
 repo_name: VCGI/vem-gis-docs
 

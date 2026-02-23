@@ -9,8 +9,8 @@ permissions:
   contents: write
 
 jobs:
-  deploy-cop:
-    name: Deploy VEM COP Documentation
+  deploy-sites:
+    name: Deploy MkDocs Sites
     runs-on: ubuntu-latest
         
     steps:
@@ -29,7 +29,14 @@ jobs:
           pip install --upgrade pip
           pip install mkdocs-material mkdocs-glightbox mkdocs-print-site-plugin mkdocs-jupyter
       
-      - name: Build and Deploy COP Docs
+      - name: Build COP site
         run: |
           cd exb/cop
-          mkdocs gh-deploy --force --config-file mkdocs.yml --remote-branch gh-pages
+          mkdocs build --site-dir ../../site/cop
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          keep_files: true
