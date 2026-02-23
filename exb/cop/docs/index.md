@@ -5,8 +5,8 @@ template: home.html
 # VEM Common Operating Picture Dashboard
 
 Welcome to the Vermont Emergency Management Common Operating Picture (COP) documentation.
-!!! warning "🚧 Under Construction"
-    This site is actively under development. Last updated: February 20, 2026
+!!! warning "🚧 Under Construction" 
+    This site is actively under development. Last Updated: <span class="last-update-text">Loading...</span>
 
 ## What is the VEM COP?
 
@@ -40,7 +40,7 @@ New to the COP? Start with the [Overview](overview.md) to understand the applica
 
 !!! info "Version Information"
     This documentation reflects the current production version of the VEM COP application.
-    Last updated: January 10, 2026
+    Last updated: <span class="last-update-text">Loading...</span>
 
 ## Application Access
 

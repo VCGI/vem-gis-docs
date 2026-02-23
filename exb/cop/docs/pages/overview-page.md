@@ -72,19 +72,19 @@ The left side of the page contains a Sidecar Widget the user can expand/contact.
 
             <div class="no-datatable" markdown="1">
 
-            | Indicator | Data Source | Icon Source |
-            | :--- | :--- | :--- |
-            | 511 Incidents| [VT 511](https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2) | [Icon](../images/pages/cop-511-icon.png) |
-            | Open Shelters | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&sublayer=1) | [Icon](../images/pages/cop-shelter-icon.png) |
-            | Recovery Centers | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) | [Icon](../images/pages/cop-recovery-icon.png) |
-            | 211 Calls | ⚠️ [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) ⚠️ | [Icon](../images/pages/cop-211-icon.png) |
-            | Declared Disasters | [FEMA](https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/0) | [Icon](../images/pages/cop-disaster-icon.png) |
-            | Boil Water Notices | [VTANR](https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0)  | [Icon](../images/pages/cop-boil-icon.png) |
-            | Boil Water Notices - Storm Related | [VTANR](https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASDWGWP_WM_NOCACHE/MapServer/18) | [Icon](../images/pages/cop-boil-storm-icon.png) |
+            | Indicator | Data Source | Icon Source | Field Attribute Expression |
+            | :--- | :--- | :--- | :--- | 
+            | 511 Incidents| [VT 511](https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2) | [Icon](../images/pages/cop-511-icon.png) | `COUNT({ObjectID})` |
+            | Open Shelters | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&sublayer=1) | [Icon](../images/pages/cop-shelter-icon.png) | `COUNT({ObjectID})` |
+            | Recovery Centers | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) | [Icon](../images/pages/cop-recovery-icon.png) | `COUNT({ObjectID})` |
+            | 211 Calls | ⚠️ [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) ⚠️ | [Icon](../images/pages/cop-211-icon.png) | `⚠️ TBD` |
+            | Declared Disasters | [FEMA](https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/0) | [Icon](../images/pages/cop-disaster-icon.png) | `See Arcade Expression Below` |
+            | Boil Water Notices | [VTANR](https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0)  | [Icon](../images/pages/cop-boil-icon.png) | `COUNT({WSID})` |
+            | Boil Water Notices - Storm Related | [VTANR](https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASDWGWP_WM_NOCACHE/MapServer/18) | [Icon](../images/pages/cop-boil-storm-icon.png) | `COUNT({WSID})`|
 
             </div>
 
-         **Arcade Expressions Used in Sidecar Widget**: The following expression was used to visualize the Declared Disasters Indicator counts:<br>
+         **Arcade Expression Used in Sidecar Widget**: The following expression was used to visualize the Declared Disasters Indicator counts:<br>
          ```javascript title="Delcared Disasters: Declarations Unique Count"
          // Specify Declaration Number field name
          var fieldName = 'dec_number';

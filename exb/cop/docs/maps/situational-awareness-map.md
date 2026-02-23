@@ -95,7 +95,7 @@ These feature services are not symbolized on the map but are used to populate wi
     - `status`: Level 1 - Normal Operations, Level 2 - Enhanced Operations, Level 3 - Partial Activation, Level 4 - Full Activation, Inactive, Unknown
     - `type`: Municipal EOC, State of Vermont EOC
     - `site_preference`: Primary Location, Alternative Location
-    - `note`: Relevant notes
+    - `notes`: Relevant notes
 
     **Symbology:**
 
@@ -117,7 +117,7 @@ These feature services are not symbolized on the map but are used to populate wi
     
     - `shelter_name`: Facility name
     - `address`: Street address
-    - `town`: Municipality
+    - `town`: Town/city
     - NEED TO UPDATE LINK AND FIELDS AFTER NEW BOARD IS PUBLISHED
 
 
@@ -458,7 +458,7 @@ These feature services are not symbolized on the map but are used to populate wi
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Severe Thunderstorm Warnings Filter Screenshot](../images/maps/noaa-severe-thunderstorm-warning-filter.jpg)
 
 ??? info "NOAA Tornado Warnings"
@@ -480,7 +480,7 @@ These feature services are not symbolized on the map but are used to populate wi
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Tornado Warnings Filter Screenshot](../images/maps/noaa-tornado-warning-filter.jpg)
 
 ??? info "NOAA Flash Flood Warnings"
@@ -502,7 +502,7 @@ These feature services are not symbolized on the map but are used to populate wi
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Flash Flood Warnings Filter Screenshot](../images/maps/noaa-flash-flood-warning-filter.jpg)
 
 ??? info "NOAA Special Marine Warnings"
@@ -524,7 +524,7 @@ These feature services are not symbolized on the map but are used to populate wi
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Special Marine Warnings Filter Screenshot](../images/maps/noaa-special-marine-warning-filter.jpg)
 
 ??? info "Active Hurricanes, Cyclones, and Typhoons"

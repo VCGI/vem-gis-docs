@@ -321,7 +321,7 @@ This map provides detailed weather information for:
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Severe Thunderstorm Warnings Filter Screenshot](../images/maps/noaa-severe-thunderstorm-warning-filter.jpg)
 
 ??? info "NOAA Tornado Warnings"
@@ -343,7 +343,7 @@ This map provides detailed weather information for:
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Tornado Warnings Filter Screenshot](../images/maps/noaa-tornado-warning-filter.jpg)
 
 ??? info "NOAA Flash Flood Warnings"
@@ -365,7 +365,7 @@ This map provides detailed weather information for:
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Flash Flood Warnings Filter Screenshot](../images/maps/noaa-flash-flood-warning-filter.jpg)
 
 ??? info "NOAA Special Marine Warnings"
@@ -387,7 +387,7 @@ This map provides detailed weather information for:
 
     **Filter:**
 
-    Filtered by `to be determined`<br><br>
+    Filtered by `Weather Forecast Office = BTV OR Weather Forecast Office = ALY`<br><br>
         ![NOAA Special Marine Warnings Filter Screenshot](../images/maps/noaa-special-marine-warning-filter.jpg)
 
 ??? info "Active Hurricanes, Cyclones, and Typhoons"

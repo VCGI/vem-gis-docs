@@ -9,7 +9,7 @@ repo_name: VCGI/vem-gis-docs
 
 theme:
   name: material
-  custom_dir: overrides  # Tells MkDocs to look here for custom layouts
+  custom_dir: overrides  # Tells MkDocs to look here for custom layouts & JS files
   palette:
     # Light mode
     - scheme: default
@@ -125,3 +125,4 @@ extra_javascript:
   - https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js
   - javascripts/tables-init.js
   - javascripts/print-button.js # For printing the page
+  - javascripts/github-stats.js # For injecting GitHub repo update into every page
