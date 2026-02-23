@@ -30,7 +30,7 @@ The VEM COP is an ArcGIS Experience Builder application that provides real-time 
 
 New to the COP? Start with the [Overview](overview.md) to understand the application structure, then explore specific sections based on your needs:
 
-1. **For Users**: Check out the [Maps section](maps/index.md) to understand available data layers
+1. **For General Use**: Check out the [Maps section](maps/index.md) to understand available data layers
 2. **For SAS staff and/or Watch Officers**: Learn [Workflows](workflows/index.md) for common operational tasks
 
 !!! tip "Need Help?"
