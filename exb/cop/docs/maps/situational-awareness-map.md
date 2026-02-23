@@ -184,8 +184,6 @@ These feature services are not symbolized on the map but are used to populate wi
     - `report_type`: Incident type (e.g., construction, accident, etc.)
     - `report_time`: Original report time
 
-    **Symbology:**
-
     Color-coded by `report_type`<br>
     Icon: Point symbol from ESRI basic points<br><br>
         ![VT 511 Incidents Symbology Screenshot](../images/maps/vt-511-waze-symbology.jpg)

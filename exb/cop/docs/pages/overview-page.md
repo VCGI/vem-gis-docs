@@ -74,7 +74,7 @@ The left side of the page contains a Sidecar Widget the user can expand/contact.
 
             | Indicator | Data Source | Icon Source | Field Attribute Expression |
             | :--- | :--- | :--- | :--- | 
-            | 511 Incidents| [VT 511](https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2) | [Icon](../images/pages/cop-511-icon.png) | `COUNT({ObjectID})` |
+            | 511 Incidents| [VT 511](https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2) | [Icon](../images/pages/cop-511-icon.png) | `See Arcade Expression Below` |
             | Open Shelters | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&sublayer=1) | [Icon](../images/pages/cop-shelter-icon.png) | `COUNT({ObjectID})` |
             | Recovery Centers | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) | [Icon](../images/pages/cop-recovery-icon.png) | `COUNT({ObjectID})` |
             | 211 Calls | ⚠️ [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) ⚠️ | [Icon](../images/pages/cop-211-icon.png) | `⚠️ TBD` |
@@ -84,8 +84,10 @@ The left side of the page contains a Sidecar Widget the user can expand/contact.
 
             </div>
 
-         **Arcade Expression Used in Sidecar Widget**: The following expression was used to visualize the Declared Disasters Indicator counts:<br>
-         ```javascript title="Delcared Disasters: Declarations Unique Count"
+         **Arcade Expressions Used in Sidecar Widget**: <br><br>
+         
+         The following expression was used to visualize the Declared Disasters Indicator counts:<br>
+         ```javascript title="Declared Disasters: Unique Count"
          // Specify Declaration Number field name
          var fieldName = 'dec_number';
 
@@ -95,6 +97,24 @@ The left side of the page contains a Sidecar Widget the user can expand/contact.
          // Return the count of the unique features.
          return Count(uniqueValues);
          ```   
+            ![FEMA Sidecar Expression Screenshot ](../images/maps/fema-declared-disasters-arcade.jpg)
+        <br><br>
+        The following expression creates a group based on the incident name and then counts the # of unique groups.<br>
+        ```javascript title="VT 511: Unique Count"
+        // This script correctly counts the number of unique incidents.
+
+        // Group records by the 'Name' field. A simple statistic is required
+        // by the function, but we only care about the groups themselves.
+        var incidentGroups = GroupBy($dataSources["dataSource_2-198e8bab3ca-layer-76-198f5ed1084-layer-48"].layer, 'Name', [
+        { name: 'group_count', expression: '1', statistic: 'COUNT' }
+        ]);
+
+        // Count how many unique groups (incidents) were created.
+        return Count(incidentGroups);
+        ```
+            ![VT511 Sidecar Expression Screenshot ](../images/maps/vt-511-arcade.jpg)
+
+    
 
 
 ### Map Section
