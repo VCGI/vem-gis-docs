@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEM GIS Documentation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --vt-green: #046A38;
+            --vt-green-light: #058a48;
+            --vt-green-dark: #034a28;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+
+        .header {
+            background: var(--vt-green);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .intro {
+            margin-bottom: 3rem;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .doc-card {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            overflow: hidden;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .doc-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #333;
+            margin: 0;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 3px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-live {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .badge-soon {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-body p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: start;
+        }
+
+        .feature-list li:before {
+            content: "→";
+            color: var(--vt-green);
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.625rem 1.5rem;
+            background: var(--vt-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--vt-green-light);
+        }
+
+        .btn-disabled {
+            background: #bdbdbd;
+            cursor: not-allowed;
+        }
+
+        .btn-disabled:hover {
+            background: #bdbdbd;
+        }
+
+        .footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .footer a {
+            color: var(--vt-green);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .docs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header matching Material theme -->
+    <header class="header">
+        <div class="header-content">
+            <h1>VEM GIS Documentation</h1>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="intro">
+            <h2>Documentation Portal</h2>
+            <p>Comprehensive documentation for Vermont Emergency Management's Geographic Information Systems and applications. Select a project below to view detailed guides, technical references, and operational workflows.</p>
+        </div>
+
+        <div class="docs-grid">
+            <!-- COP Documentation Card -->
+            <div class="doc-card">
+                <div class="card-header">
+                    <h3>VEM COP - Internal</h3>
+                    <span class="badge badge-live">Live</span>
+                </div>
+                <div class="card-body">
+                    <p>Experience Builder application providing real-time situational awareness for emergency management operations across Vermont.</p>
+                    <ul class="feature-list">
+                        <li>Interactive Maps & Layers</li>
+                        <li>Arcade Expressions</li>
+                        <li>Data Source Integration</li>
+                        <li>Operational Workflows</li>
+                    </ul>
+                    <a href="cop/" class="btn">View Documentation</a>
+                </div>
+            </div>
+
+            <!-- COP Public Documentation Card -->
+            <div class="doc-card">
+                <div class="card-header">
+                    <h3>VEM COP - Public Facing</h3>
+                    <span class="badge badge-soon">Coming Soon</span>
+                </div>
+                <div class="card-body">
+                    <p>Public-facing dashboard providing real-time situational awareness for external stakeholders, partner agencies, and community members.</p>
+                    <ul class="feature-list">
+                        <li>Public Data Access</li>
+                        <li>Partner Resources</li>
+                        <li>API Documentation</li>
+                        <li>External Workflows</li>
+                    </ul>
+                    <a href="#" class="btn btn-disabled">Coming Soon</a>
+                </div>
+            </div>
+
+            <!-- Add Future Projects -->
+            <!--
+            <div class="doc-card">
+                <div class="card-header">
+                    <h3>Your Project Name</h3>
+                    <span class="badge badge-live">Live</span>
+                </div>
+                <div class="card-body">
+                    <p>Description of your project.</p>
+                    <ul class="feature-list">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <a href="your-project/" class="btn">View Documentation</a>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div class="footer">
+            <p><strong>VEM Documentation (vem-gis-docs)</strong></p>
+            <p>For technical support: <a href="mailto:john.vanhoesen@vermont.gov">john.vanhoesen@vermont.gov</a> | <a href="https://github.com/VCGI/vem-gis-docs" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
