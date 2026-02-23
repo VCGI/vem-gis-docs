@@ -5,7 +5,7 @@
 
 Comprehensive view of Vermont's critical facilities and emergency response resources.
 
-![Infrastructure Map](../images/maps/infrastructure.png)
+![Infrastructure Map](../images/maps/infrastructure.jpg)
 *Replace with actual screenshot*
 
 ## Purpose
