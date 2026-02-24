@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -1486,7 +1486,7 @@
 <h2 id="index-getting-started">Getting Started<a class="headerlink" href="#index-getting-started" title="Permanent link">¶</a></h2>
 <p>New to the <abbr title="Common Operating Picture">COP</abbr>? Start with the <a href="#overview">Overview</a> to understand the application structure, then explore specific sections based on your needs:</p>
 <ol>
-<li><strong>For General Use</strong>: Check out the <a href="#maps">Maps section</a> to understand available data layers</li>
+<li><strong>For General Users</strong>: Check out the <a href="#maps">Maps section</a> to understand available data layers and attribute definitions</li>
 <li><strong>For <abbr title="Situational Awareness section">SAS</abbr> staff and/or Watch Officers</strong>: Learn <a href="#workflows">Workflows</a> for common operational tasks</li>
 </ol>
 <div class="admonition tip">
@@ -1525,14 +1525,14 @@ Last updated: <span class="last-update-text">Loading...</span></p>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#overview-__codelineno-0-7"></a>│ 
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#overview-__codelineno-0-8"></a>├── 📝 Weather Page
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#overview-__codelineno-0-9"></a>│   └── 🗺️ Weather WebMap
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#overview-__codelineno-0-10"></a>│       ├── 📜 NWS Watches &amp; Warnings
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#overview-__codelineno-0-11"></a>│       ├── 📜 NOAA Precipitation Forecast
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#overview-__codelineno-0-10"></a>│       ├── 📜 NWS Watches &amp; Warnings (Feature Layer)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#overview-__codelineno-0-11"></a>│       ├── 📜 NOAA Precipitation Forecast (Feature Layer)
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#overview-__codelineno-0-12"></a>│       └── 📜 Etc.
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#overview-__codelineno-0-13"></a>│ 
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#overview-__codelineno-0-14"></a>├── 📝 Fire Risk Page
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#overview-__codelineno-0-15"></a>│    └── 🗺️ Fire Risk WebMap
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#overview-__codelineno-0-16"></a>│         ├── 📜 Shelters (Point Layer)
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#overview-__codelineno-0-17"></a>│         ├── 📜 NOAA Precipitation Forecast
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#overview-__codelineno-0-16"></a>│         ├── 📜 Vermont Fire Danger (Feature Layer)
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#overview-__codelineno-0-17"></a>│         ├── 📜 Current Wildfire Incidents (Feature Layer)
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#overview-__codelineno-0-18"></a>│         └── 📜 Etc.
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#overview-__codelineno-0-19"></a>│ 
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#overview-__codelineno-0-20"></a>├──📝 VT Outages Page
@@ -1556,7 +1556,7 @@ Last updated: <span class="last-update-text">Loading...</span></p>
 <li><strong>Situational Awareness Map</strong>: Real-time view of current conditions</li>
 <li><strong>Weather Map</strong>: Detailed meteorological data, forecast, and warnings</li>
 <li><strong>Fire Risk Map</strong>: Daily fire danger forecasts and preparedness levels</li>
-<li><strong>Power Outages Map</strong>: Statweide power outage accessed via VT Outages</li>
+<li><strong>Power Outages Map</strong>: Statewide power outage accessed via VT Outages</li>
 <li><strong>Mass Care Map</strong>: Location and status of Vermont mass care resources</li>
 <li><strong>Infrastructure Map</strong>: Real-time road closure data (available during <abbr title="State Emergency Operations Center">SEOC</abbr> activation)</li>
 </ul>
@@ -1570,7 +1570,7 @@ Last updated: <span class="last-update-text">Loading...</span></p>
 <li>Power outage data (vtoutages.org)</li>
 <li>VT 211 call locations</li>
 </ul>
-<p>See the <a href="#maps">Maps section</a> for detailed information about data sources.</p>
+<p>See the <a href="#maps">Maps section</a> for detailed information about data sources and related attributes.</p>
 <h2 id="overview-user-interface-layout">User Interface Layout<a class="headerlink" href="#overview-user-interface-layout" title="Permanent link">¶</a></h2>
 <p>Preview screenshot of the <abbr title="Common Operating Picture">COP</abbr> interface</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/screenshots/user-interface-layout.jpg" data-desc-position="bottom"><img alt="User Interface Layout" src="../images/screenshots/user-interface-layout.jpg"></a></p>
@@ -1706,9 +1706,9 @@ Last updated: <span class="last-update-text">Loading...</span></p>
 <h3 id="maps-infrastructure-map"><a href="#maps-infrastructure-map">Infrastructure Map</a><a class="headerlink" href="#maps-infrastructure-map" title="Permanent link">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Under Development</p>
-<p>This map is currently being configured. Documentation will be added when completed (map is named <abbr title="Common Operating Picture">COP</abbr> - Infrastructure in <abbr title="ArcGIS Online">AGO</abbr>).</p>
+<p>This map is currently being configured. Documentation will be added when completed.</p>
 </div>
-<p>Comprehensive view of Vermont's critical facilities and resources.</p>
+<p>Comprehensive view of Vermont's critical facilities and resources (map is named <abbr title="Common Operating Picture">COP</abbr> - Infrastructure in <abbr title="ArcGIS Online">AGO</abbr>).</p>
 <p><strong>Key Layers:</strong></p>
 <ul>
 <li>Hospitals and medical facilities</li>
@@ -3037,7 +3037,7 @@ Icon: Geometric symbols imported from <abbr title="Environmental Systems Researc
 <li><code>name</code>: Location description (river + town + state)</li>
 <li><code>status</code>: The current flood condition relative to <abbr title="National Weather Service">NWS</abbr> flood thresholds </li>
 <li><code>height</code>: Refers to gauge height; the vertical distance of the water surface above the station's reference datum (in ft)  </li>
-<li><code>flow</code>: Refers to discharge; the volume of water moving down the river (in <abbr title="Cubic feet per">cfs</abbr>)</li>
+<li><code>flow</code>: Refers to discharge; the volume of water moving down the river (in <abbr title="Cubic feet per second">cfs</abbr>)</li>
 <li><code>governing_location</code>: Describes the general location of the gauge (State, USA) </li>
 <li><code>lastupdate</code>: The timestamp of the most recent data received from the gauge </li>
 </ul>
@@ -3940,7 +3940,7 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <p><strong>Key Features:</strong></p>
 <ul>
 <li><abbr title="National Weather Service">NWS</abbr> alerts and warnings</li>
-<li>Radar imagery and loops</li>
+<li>Time-enabled radar imagery</li>
 <li>Forecast data and models</li>
 <li>Weather station observations</li>
 <li>Historical weather data</li>
@@ -3953,9 +3953,7 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <ul>
 <li>Fire danger ratings by region</li>
 <li>Active fire incidents</li>
-<li>Fire weather forecasts</li>
-<li>Resource availability</li>
-<li>Historical fire data</li>
+<li>Fire preparedness levels</li>
 </ul>
 <p><strong>Best Used For:</strong> Fire season planning and wildfire response</p>
 <hr>
@@ -3965,9 +3963,7 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <ul>
 <li>Real-time outage data by utility</li>
 <li>Customer impact statistics</li>
-<li>Town-level aggregation</li>
-<li>Outage duration tracking</li>
-<li>Restoration estimates</li>
+<li>Town &amp; county level aggregation</li>
 </ul>
 <p><strong>Best Used For:</strong> Power outage monitoring and public information</p>
 <hr>
@@ -3977,7 +3973,6 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <ul>
 <li>Emergency shelter locations</li>
 <li>Capacity and occupancy tracking</li>
-<li>Resource coordination tools</li>
 <li>Contact information</li>
 </ul>
 <p><strong>Best Used For:</strong> Shelter activation and mass care operations</p>
@@ -3990,15 +3985,15 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 </div>
 <p><strong>Key Features:</strong></p>
 <ul>
-<li>Road closures and restrictions</li>
-<li>Traffic incidents</li>
+<li>Critical infrastructure</li>
 <li>VT 511 integration</li>
+<li>AOT road closure updates</li>
 </ul>
 <p><strong>Best Used For:</strong> <abbr title="Federal Emergency Management Agency">FEMA</abbr> reporting and public relations</p>
 <hr>
 <h2 id="pages-page-navigation">Page Navigation<a class="headerlink" href="#pages-page-navigation" title="Permanent link">¶</a></h2>
 <h3 id="pages-accessing-pages">Accessing Pages<a class="headerlink" href="#pages-accessing-pages" title="Permanent link">¶</a></h3>
-<p>Pages are accessed via the navigation bar in the Vermont Emergency Management <abbr title="Common Operating Picture">COP</abbr> Experience Builder application. Click any page tab to switch views.</p>
+<p>Pages are accessed via the navigation bar in the <abbr title="Common Operating Picture">COP</abbr> dashboard. Click any page tab to switch views.</p>
 <h3 id="pages-page-structure">Page Structure<a class="headerlink" href="#pages-page-structure" title="Permanent link">¶</a></h3>
 <p>Each page typically includes:</p>
 <ul>
@@ -4012,7 +4007,7 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <p>Some advanced features may have limited functionality on mobile devices. Desktop browsers are recommended for full operational use.</p>
 </div>
 <h2 id="pages-feedback">Feedback<a class="headerlink" href="#pages-feedback" title="Permanent link">¶</a></h2>
-<p>If you have suggestions for improving any page or need additional functionality, contact John Van Hoesen at john.vanhoesen@vermont.gov.</p></body></html></section><section class="print-page" id="pages-overview-page" heading-number="4.2"><html><head>
+<p>If you have suggestions for improving any page or need additional functionality, contact <a href="mailto:john.vanhoesen@vermont.gov">John Van Hoesen</a></p></body></html></section><section class="print-page" id="pages-overview-page" heading-number="4.2"><html><head>
         <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
@@ -4811,7 +4806,13 @@ The following expression creates a group based on the incident name and then cou
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://img.shields.io/badge/Status-Active-success" data-desc-position="bottom"><img alt="" src="https://img.shields.io/badge/Status-Active-success"></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://img.shields.io/badge/Data%20Source-FEMA-red" data-desc-position="bottom"><img alt="" src="https://img.shields.io/badge/Data%20Source-FEMA-red"></a></p>
 </div>
-<h2 id="python-notebooks-related-documentation">Related Documentation<a class="headerlink" href="#python-notebooks-related-documentation" title="Permanent link">¶</a></h2></body></html></section></section>
+<h2 id="python-notebooks-related-documentation">Related Documentation<a class="headerlink" href="#python-notebooks-related-documentation" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://developers.arcgis.com/documentation/portal-and-data-services/portals/notebooks/"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Notebooks Documentation</a></li>
+<li><a href="https://developers.arcgis.com/python/latest/samples/"><abbr title="Environmental Systems Research Institute">ESRI</abbr> Sample Notebooks</a></li>
+</ul>
+<h2 id="python-notebooks-feedback">Feedback<a class="headerlink" href="#python-notebooks-feedback" title="Permanent link">¶</a></h2>
+<p>If you have suggestions for improving any page or need additional functionality, contact <a href="mailto:john.vanhoesen@vermont.gov">John Van Hoesen</a></p></body></html></section></section>
                     <section class='print-page md-section' id='section-6' heading-number='6'>
                         <h1>⚠️ Workflows<a class='headerlink' href='#section-6' title='Permanent link'></a>
                         </h1>
