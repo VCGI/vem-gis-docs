@@ -23,7 +23,7 @@ Throughout the documentation, you will see colored call-out boxes and custom but
 <br>
 **Copy Code Blocks:**
 When you see a code block like the one below, if you click the small copy icon in the right corner the code will be copied to the clipboard.<br> 
-![Copy Code Block Screenshot](/images/pages/site-guide-code-copy.jpg)
+![Copy Code Block Screenshot](images/pages/site-guide-code-copy.jpg)
 
 **Source Code Buttons:**
 When you see a green button like the one below, it indicates a direct link to the live source code or Jupyter Notebook hosted in the GitHub repository.<br><br> 
