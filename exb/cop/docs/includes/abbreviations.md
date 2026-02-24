@@ -18,7 +18,7 @@
 *[AHS]: Vermont Agency of Human Services
 *[NAEA]: North American Environmental
 *[NWGC]: National Wildfire Coordination Group
-*[cfs]: Cubic feet per
+*[cfs]: Cubic feet per second
 *[mph]: Miles per hour
 *[in/hr]: Inches per hour
 *[W/m²]: Watts per meter squared

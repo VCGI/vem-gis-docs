@@ -24,7 +24,7 @@ Dedicated weather monitoring and forecasting interface.
 **Key Features:**
 
 - NWS alerts and warnings
-- Radar imagery and loops
+- Time-enabled radar imagery
 - Forecast data and models
 - Weather station observations
 - Historical weather data
@@ -40,9 +40,7 @@ Fire danger assessment and wildfire monitoring.
 
 - Fire danger ratings by region
 - Active fire incidents
-- Fire weather forecasts
-- Resource availability
-- Historical fire data
+- Fire preparedness levels
 
 **Best Used For:** Fire season planning and wildfire response
 
@@ -55,9 +53,7 @@ Power outage tracking and utility coordination.
 
 - Real-time outage data by utility
 - Customer impact statistics
-- Town-level aggregation
-- Outage duration tracking
-- Restoration estimates
+- Town & county level aggregation
 
 **Best Used For:** Power outage monitoring and public information
 
@@ -70,7 +66,6 @@ Shelter and mass care resource management.
 
 - Emergency shelter locations
 - Capacity and occupancy tracking
-- Resource coordination tools
 - Contact information
 
 **Best Used For:** Shelter activation and mass care operations
@@ -85,9 +80,9 @@ Transportation infrastructure monitoring.
 
 **Key Features:**
 
-- Road closures and restrictions
-- Traffic incidents
+- Critical infrastructure
 - VT 511 integration
+- AOT road closure updates
 
 **Best Used For:** FEMA reporting and public relations
 
@@ -96,7 +91,7 @@ Transportation infrastructure monitoring.
 ## Page Navigation
 
 ### Accessing Pages
-Pages are accessed via the navigation bar in the Vermont Emergency Management COP Experience Builder application. Click any page tab to switch views.
+Pages are accessed via the navigation bar in the COP dashboard. Click any page tab to switch views.
 
 ### Page Structure
 Each page typically includes:
@@ -112,4 +107,4 @@ Each page typically includes:
 
 ## Feedback
 
-If you have suggestions for improving any page or need additional functionality, contact John Van Hoesen at john.vanhoesen@vermont.gov.
+If you have suggestions for improving any page or need additional functionality, contact [John Van Hoesen](mailto:john.vanhoesen@vermont.gov)

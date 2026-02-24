@@ -49,8 +49,12 @@ The following Python notebooks handle the background data processing for VEM-hos
 
 ## Related Documentation
 
+- [ESRI Notebooks Documentation](https://developers.arcgis.com/documentation/portal-and-data-services/portals/notebooks/)
+- [ESRI Sample Notebooks](https://developers.arcgis.com/python/latest/samples/)
 
+## Feedback
 
+If you have suggestions for improving any page or need additional functionality, contact [John Van Hoesen](mailto:john.vanhoesen@vermont.gov)
 
 
 

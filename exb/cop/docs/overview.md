@@ -16,14 +16,14 @@ The COP dashboard is generally organized into the following primary components:
 │ 
 ├── 📝 Weather Page
 │   └── 🗺️ Weather WebMap
-│       ├── 📜 NWS Watches & Warnings
-│       ├── 📜 NOAA Precipitation Forecast
+│       ├── 📜 NWS Watches & Warnings (Feature Layer)
+│       ├── 📜 NOAA Precipitation Forecast (Feature Layer)
 │       └── 📜 Etc.
 │ 
 ├── 📝 Fire Risk Page
 │    └── 🗺️ Fire Risk WebMap
-│         ├── 📜 Shelters (Point Layer)
-│         ├── 📜 NOAA Precipitation Forecast
+│         ├── 📜 Vermont Fire Danger (Feature Layer)
+│         ├── 📜 Current Wildfire Incidents (Feature Layer)
 │         └── 📜 Etc.
 │ 
 ├──📝 VT Outages Page
@@ -48,7 +48,7 @@ Multiple map views provide different perspectives on Vermont's emergency managem
 - **Situational Awareness Map**: Real-time view of current conditions
 - **Weather Map**: Detailed meteorological data, forecast, and warnings
 - **Fire Risk Map**: Daily fire danger forecasts and preparedness levels
-- **Power Outages Map**: Statweide power outage accessed via VT Outages
+- **Power Outages Map**: Statewide power outage accessed via VT Outages
 - **Mass Care Map**: Location and status of Vermont mass care resources
 - **Infrastructure Map**: Real-time road closure data (available during SEOC activation)
 
@@ -64,7 +64,7 @@ For example:
 - Power outage data (vtoutages.org)
 - VT 211 call locations
 
-See the [Maps section](maps/index.md) for detailed information about data sources.
+See the [Maps section](maps/index.md) for detailed information about data sources and related attributes.
 
 ## User Interface Layout
 

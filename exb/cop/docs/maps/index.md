@@ -51,9 +51,9 @@ Focused view of wildfire related data layers (map is named VT COP - Fire Risk in
 ### [Infrastructure Map](infrastructure-map.md)
 
 !!! warning "Under Development"
-    This map is currently being configured. Documentation will be added when completed (map is named COP - Infrastructure in AGO).
+    This map is currently being configured. Documentation will be added when completed.
 
-Comprehensive view of Vermont's critical facilities and resources.
+Comprehensive view of Vermont's critical facilities and resources (map is named COP - Infrastructure in AGO).
 
 **Key Layers:**
 
