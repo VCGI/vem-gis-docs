@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy-sites:
-    name: Deploy MkDocs Sites
+    name: Deploy ESRI Documentation Sites
     runs-on: ubuntu-latest
         
     steps:
@@ -31,8 +31,16 @@ jobs:
       
       - name: Build COP site
         run: |
-          cd exb/cop
-          mkdocs build --site-dir ../../site/cop
+          cd esri/exb/cop
+          mkdocs build --site-dir ../../../site/cop
+      
+      - name: Build Dashboards site (if exists)
+        run: |
+          if [ -d "esri/dashboards" ]; then
+            cd esri/dashboards
+            mkdocs build --site-dir ../../site/dashboards
+          fi
+        continue-on-error: true
       
       - name: Copy landing page
         run: |
