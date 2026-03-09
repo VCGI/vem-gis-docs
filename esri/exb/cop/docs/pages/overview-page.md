@@ -54,7 +54,7 @@ The header is the primary visual cue for the SEOC operations status and is visib
     - **Embed Widget**: A live time & date indicator tied to an html file hosted in VCGI's Azure blob storage.
         - **HTML Source**: The html supporting this indicator is available [here](https://vcgiblobapps.blob.core.windows.net/other/demo/vem-clock/vem-clock.html)
     
-    - **Image Widget**: VEM randing logo available [here](../images/pages/vem_logo_0.png)
+    - **Image Widget**: VEM branding logo available [here](../images/pages/vem_logo_0.png)
     - **Navigation Widget**: Horizontal tabs linked to individual pages. The color of each tab changes dynamically on hover and click.
            ![COP Header Navigagtion Screenshot](../images/pages/cop-header-nav.jpg)
 
