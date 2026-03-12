@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -2860,6 +2860,12 @@ Icon: Pre-defined symbology by USDM<br><br>
 <td><a href="https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows"><abbr title="National Weather Service">NWS</abbr></a></td>
 </tr>
 <tr>
+<td>Weather</td>
+<td><abbr title="National Weather Service">NWS</abbr> River Gauges</td>
+<td>Classified by <code>Flood Status</code></td>
+<td><a href="https://mapservices.weather.noaa.gov/eventdriven/rest/services/water/riv_gauges/MapServer/0"><abbr title="National Weather Service">NWS</abbr></a></td>
+</tr>
+<tr>
 <td>Winter Weather</td>
 <td>Ice Accumulation Forecast</td>
 <td>Multiple layers</td>
@@ -3275,6 +3281,37 @@ Icon: Geometric symbols imported from <abbr title="Environmental Systems Researc
 <div class="admonition warning">
 <p class="admonition-title">Wind Gust Projections</p>
 <p><abbr title="National Weather Service">NWS</abbr> forecasts are often broken into 1-hour, 3-hour, or 6-hour blocks. A polygon on the map represents the maximum gust expected between the <code>From Date</code> and <code>To Date</code>.</p>
+</div>
+</details>
+<details class="info">
+<summary><abbr title="National Weather Service">NWS</abbr> River Gauges</summary>
+<p><strong>Source:</strong> <a href="https://mapservices.weather.noaa.gov/eventdriven/rest/services/water/riv_gauges/MapServer/0"><abbr title="National Weather Service">NWS</abbr></a> 
+<strong>Geometry Type:</strong> Point
+<strong>Coordinate System:</strong> NAD83(NSRS2007) (EPSG:4759)
+<strong>Update Method:</strong> Automatically updated by <abbr title="National Weather Service">NWS</abbr></p>
+<p><strong>Pop-Up Attributes:</strong></p>
+<ul>
+<li><code>Gauge ID</code>: A unique 5-character alphanumeric identifier assigned by the National Weather Service (e.g., BTVV1 for Burlington).</li>
+<li><code>Flood Hazard Value</code>: The current water level measurement relative to the highest <abbr title="National Weather Service">NWS</abbr> flood category reached (Action, Minor, Moderate, or Major).</li>
+<li><code>Flood Status</code>: A text description of the current severity (e.g., "No Flooding," "Minor Flooding," or "Major Flooding") based on the latest observation.</li>
+<li><code>Gauge Location</code>: The descriptive name of the station, typically including the river name and the nearest town or city (e.g., "WINOOSKI RIVER AT ESSEX JUNCTION").</li>
+<li><code>Hydrograph</code>: A dynamic URL that links to the official <abbr title="National Weather Service">NWS</abbr> hydrograph image, showing the last few days of observations and the next few days of predicted water levels.</li>
+<li><code>Major Flood Danger Value</code>: The specific water level (stage) at which "Major" flooding begins; this is the threshold where extensive inundation of structures and roads is expected.</li>
+<li><code>Observation Time</code>: The exact date and time (usually in UTC) when the most recent physical measurement was recorded at the gauge site.</li>
+<li><code>Observed</code>: The numerical value of the most recent water level measurement (Stage in feet or Flow in cubic feet per second).</li>
+<li><code>Units</code>: The unit of measurement for the Observed value, typically "ft" (feet) for stage height or "kcfs" (kilo-cubic feet per second) for discharge.</li>
+<li><code>Water Body</code>: The name of the river, stream, creek, or lake where the gauge is physically located.</li>
+<li><code>Water Level In Need of Action</code>: Also known as "Action Stage"; the water level where the <abbr title="National Weather Service">NWS</abbr> or local officials need to begin taking preparatory mitigation actions before actual flooding begins.</li>
+</ul>
+<p><strong>Symbology:</strong></p>
+<p><abbr title="Environmental Systems Research Institute">ESRI</abbr> basic point<br>
+Icon: Geometric symbols imported from <abbr title="Environmental Systems Research Institute">ESRI</abbr> basic polygons<br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/nws-river-gauges-symbology.jpg" data-desc-position="bottom"><img alt="USGS Stream Gauges Symbology Screenshot" src="../images/maps/nws-river-gauges-symbology.jpg"></a></p>
+<p>Filtered by <code>State</code><br><br>
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/maps/nws-river-gauges-filter.jpg" data-desc-position="bottom"><img alt="USGS Stream Gauges Filter Screenshot" src="../images/maps/nws-river-gauges-filter.jpg"></a></p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="National Weather Service">NWS</abbr> River Gauges Updates</p>
+<p><abbr title="National Weather Service">NWS</abbr> river gauge data typically update every 15 to 60 minutes.</p>
 </div>
 </details>
 <details class="info">
