@@ -37,6 +37,7 @@ This map provides detailed weather information for:
 | Weather | Active Hurricanes, Cyclones, & Typhoons | Multiple layers | [NOAA](https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer) |
 | Weather| Wind Gust Projections | Classified by `Speed Class` | [NWS](https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NDFD_WindGust_v1/FeatureServer/0) |
 | Weather | NWS Radar | Classified by `conus_bref_qcd` | [NWS](https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows) |
+| Weather | NWS River Gauges | Classified by `Flood Status` | [NWS](https://mapservices.weather.noaa.gov/eventdriven/rest/services/water/riv_gauges/MapServer/0) |
 | Winter Weather| Ice Accumulation Forecast | Multiple layers | [NWS](https://hub.arcgis.com/maps/esri2::national-weather-service-ice-accumulation-forecast-1/about) |
 | Winter Weather| Snowfall Forecast | Multiple layers | [NWS](hhttps://www.arcgis.com/home/item.html?id=be1bb766bf1c44a9be97bbb7c04355ff) |
 | Drought| Public Reports CMOR | ESRI basic point | [CMOR](https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/CMOR_2022_Public/FeatureServer/0) |
@@ -439,6 +440,39 @@ This map provides detailed weather information for:
 
     !!! warning "Wind Gust Projections"
         NWS forecasts are often broken into 1-hour, 3-hour, or 6-hour blocks. A polygon on the map represents the maximum gust expected between the `From Date` and `To Date`.
+
+??? info "NWS River Gauges"
+    **Source:** [NWS](https://mapservices.weather.noaa.gov/eventdriven/rest/services/water/riv_gauges/MapServer/0) 
+    **Geometry Type:** Point
+    **Coordinate System:** NAD83(NSRS2007) (EPSG:4759)
+    **Update Method:** Automatically updated by NWS
+
+    **Pop-Up Attributes:**
+    
+    - `Gauge ID`: A unique 5-character alphanumeric identifier assigned by the National Weather Service (e.g., BTVV1 for Burlington).
+    - `Flood Hazard Value`: The current water level measurement relative to the highest NWS flood category reached (Action, Minor, Moderate, or Major).
+    - `Flood Status`: A text description of the current severity (e.g., "No Flooding," "Minor Flooding," or "Major Flooding") based on the latest observation.
+    - `Gauge Location`: The descriptive name of the station, typically including the river name and the nearest town or city (e.g., "WINOOSKI RIVER AT ESSEX JUNCTION").
+    - `Hydrograph`: A dynamic URL that links to the official NWS hydrograph image, showing the last few days of observations and the next few days of predicted water levels.
+    - `Major Flood Danger Value`: The specific water level (stage) at which "Major" flooding begins; this is the threshold where extensive inundation of structures and roads is expected.
+    - `Observation Time`: The exact date and time (usually in UTC) when the most recent physical measurement was recorded at the gauge site.
+    - `Observed`: The numerical value of the most recent water level measurement (Stage in feet or Flow in cubic feet per second).
+    - `Units`: The unit of measurement for the Observed value, typically "ft" (feet) for stage height or "kcfs" (kilo-cubic feet per second) for discharge.
+    - `Water Body`: The name of the river, stream, creek, or lake where the gauge is physically located.
+    - `Water Level In Need of Action`: Also known as "Action Stage"; the water level where the NWS or local officials need to begin taking preparatory mitigation actions before actual flooding begins.
+
+    **Symbology:**
+
+    ESRI basic point<br>
+    Icon: Geometric symbols imported from ESRI basic polygons<br><br>
+        ![USGS Stream Gauges Symbology Screenshot](../images/maps/nws-river-gauges-symbology.jpg)
+
+    Filtered by `State`<br><br>
+        ![USGS Stream Gauges Filter Screenshot](../images/maps/nws-river-gauges-filter.jpg)
+
+    !!! warning "NWS River Gauges Updates"
+        NWS river gauge data typically update every 15 to 60 minutes.
+
 
 ??? info "NWS Radar"
     **Source:** [NWS](https://opengeo.ncep.noaa.gov/geoserver/conus/conus_bref_qcd/ows)<br>
