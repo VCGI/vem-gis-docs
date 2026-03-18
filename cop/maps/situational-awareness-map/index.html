@@ -1547,7 +1547,7 @@
 <td></td>
 <td>WebEOC Shelter Status</td>
 <td>Classified by <code>status</code></td>
-<td><a href="https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr></a></td>
+<td><a href="https://vtem.maps.arcgis.com/home/item.html?id=8d0cb3a96a5e48cea14fd1919453674d"><abbr title="Vermont Emergency Management">VEM</abbr></a></td>
 </tr>
 <tr>
 <td></td>
@@ -1769,7 +1769,7 @@
 <summary>VT <abbr title="Emergency Operations Center">EOC</abbr> - Status</summary>
 <p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=77b187df5ac848caa987440f01e6d4a7&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Coordinate System:</strong> Vermont State Plane (<abbr title="European Petroleum Survey Group">EPSG</abbr>:32145)<br>
 <strong>Update Method:</strong> Manually updated by <abbr title="Vermont Emergency Management">VEM</abbr> during activations</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1794,14 +1794,40 @@ Icon: <abbr title="Emergency Operations Center">EOC</abbr> symbol imported from 
 <summary>WebEOC Shelter Status</summary>
 <p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&amp;sublayer=1"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> during activations</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
 <li><code>shelter_name</code>: Facility name</li>
-<li><code>address</code>: Street address</li>
-<li><code>town</code>: Town/city</li>
-<li>NEED TO UPDATE LINK AND FIELDS AFTER NEW BOARD IS PUBLISHED</li>
+<li><code>status</code>: Indicates whether the shelters is open or closed.</li>
+<li><code>capacity</code>: Total number of people the shelter can accommodate</li>
+<li><code>occupancy</code>: Total number of people currently in the shelter </li>
+<li><code>availability</code>: Number of additional people the shelter can accept</li>
+<li><code>address</code>: Shelter street address</li>
+<li><code>shelter_type</code>: Indicates whether the shelter is Red Cross Managed or Independently Managed</li>
+<li><code>warming_center</code>: The shelter serves as warming shelter during extreme cold (Yes, No)</li>
+<li><code>cooling_center</code>: The shelter serves as cooling shelter during extreme heat (Yes, No)</li>
+<li><code>open_time</code>: Time the shelter opens</li>
+<li><code>close_time</code>: Time the shelter closes</li>
+<li><code>primary_shelter_contact</code>: Primary person to contact about the shelter</li>
+<li><code>primary_shelter_contact_phone</code>: Primary shelter contact phone number</li>
+<li><code>secondary_shelter_contact</code>: Secondary person to contact about the shelter</li>
+<li><code>secondary_shelter_contact_phone</code>: Secondary shelter contact phone number</li>
+<li><code>primary_facility_contact</code>: Primary person to contact about the facility where the shelter is located (e.g., Shelter located inside a high school or hospital)</li>
+<li><code>primary_facility_contact_phone</code>: Primary facility contact phone number</li>
+<li><code>secondary_facility_contact</code>: Secondary person to contact about the facility </li>
+<li><code>secondary_facility_contact_phone</code>: Secondary facility contact phone number</li>
+<li><code>ada_compliant</code>: Indicates whether the shelter is ADA compliant (Yes, No)</li>
+<li><code>backup_generator</code>: Indicates presence of backup generator (Yes, No)</li>
+<li><code>charging_station</code>: Indicates presence of charging station (Yes, No)</li>
+<li><code>community</code>: Indicates the primary community (town) served by the shelter</li>
+<li><code>functional_needs</code>: Indicates whether the shelter offers functional needs support services (FNSS) - (Yes, No)</li>
+<li><code>pet_friendly</code>: Indicates whether the shelter is pet friendly (Yes, No)</li>
+<li><code>reception_center</code>: Indicates where the shelters has a reception center (Yes, No)</li>
+<li><code>SafetySurvey</code>: Indicates whether a safety survey has been conducted (Performed, N/A)</li>
+<li><code>region</code>: Indicates which region of the Vermont the shelter serves</li>
+<li><code>incidentid</code>: Unique ID assigned to emergency incidents</li>
+<li><code>shelter_comments</code>: Any additional comments relevant to the shelter           </li>
 </ul>
 <p><strong>Symbology:</strong></p>
 <p>Color-coded by <code>Status</code><br>
@@ -1809,14 +1835,14 @@ Icon: <abbr title="Emergency Operations Center">EOC</abbr> symbol imported from 
     <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../images/maps/vt-shelters-symbology.jpg" data-desc-position="bottom"><img alt="VT Shelter Status Symbology Screenshot" src="../../images/maps/vt-shelters-symbology.jpg"></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Shelter Status Updates</p>
-<p>VT shelter status is manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> via WebEOC. Verify current status with <abbr title="Vermont Agency of Human Services">AHS</abbr> before directing individuals.</p>
+<p>VT shelter status is manually updated by either ARC or <abbr title="Vermont Agency of Human Services">AHS</abbr> via WebEOC. Verify current status with ARC and/or <abbr title="Vermont Agency of Human Services">AHS</abbr> before directing individuals.</p>
 </div>
 </details>
 <details class="info">
 <summary>Flood Recovery Centers</summary>
 <p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&amp;sublayer=3"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Manually updated by <abbr title="Vermont Agency of Human Services">AHS</abbr> during activations</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1838,7 +1864,7 @@ Icon: <abbr title="Emergency Operations Center">EOC</abbr> symbol imported from 
 <li><code>vdol_present</code>: VT Department of Labor representative at center (Yes, No)</li>
 <li><code>aoe_present</code>: VT Agency of Education representative at center (Yes, No)</li>
 <li><code>esd_present</code>: VT Economic Services Division representative at center (Yes, No)</li>
-<li><code>da_present</code>: VT Designgated Agencies for Mental Health representative at center (Yes, No)</li>
+<li><code>da_present</code>: VT Designated Agencies for Mental Health representative at center (Yes, No)</li>
 <li><code>vdh_present</code>: VT Department of Health representative at center (Yes, No)</li>
 <li><code>days_open</code>: Mondays &amp; Fridays, Tuesdays &amp; Fridays, Wednesday &amp; Sundays, Thursdays</li>
 </ul>
@@ -1855,7 +1881,7 @@ Icon: Shelter symbol imported from <a href="https://esri-styles.maps.arcgis.com/
 <summary>VT 511 Waze Reports</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/cb6eDXWVgAvVXeIK/arcgis/rest/services/Vermont_511_Waze_Reports_20250826_232835501446/FeatureServer/0">VT 511</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Needs to be updated using a Python Notebook <a href="https://vtem.maps.arcgis.com/home/item.html?id=8c41769fbdba404695350997f3cfb543">hosted in <abbr title="Vermont Emergency Management">VEM</abbr>'s <abbr title="ArcGIS Online">AGO</abbr></a></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1880,7 +1906,7 @@ Icon: Point symbol from <abbr title="Environmental Systems Research Institute">E
 <summary>Cooling Sites</summary>
 <p><strong>Source:</strong> <a href="https://maps.healthvermont.gov/arcgis/rest/services/VDH/EnvHealthCoolingSites_Public/MapServer/0"><abbr title="Vermont Emergency Management">VEM</abbr> <abbr title="ArcGIS Online">AGO</abbr> Feature Layer</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Manually updated by <abbr title="Vermont Department of Health">VDH</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1926,7 +1952,7 @@ Icon: Geometric symbols imported from <abbr title="Environmental Systems Researc
 <summary>Red Cross Trailer Locations</summary>
 <p><strong>Source:</strong> <a href="https://services.arcgis.com/pGfbNJoYypmNq86F/ArcGIS/rest/services/ARCNNETrailerLocations/FeatureServer/0">Red Cross</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Manually updated by ARC during activations</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1964,7 +1990,7 @@ Icon: Emergency services symbol from <abbr title="Environmental Systems Research
 <summary>VT 511 Incidents</summary>
 <p><strong>Source:</strong> <a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/2">VT 511</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Coordinate System:</strong> Vermont State Plane (<abbr title="European Petroleum Survey Group">EPSG</abbr>:32145)<br>
 <strong>Update Method:</strong> Regularly updated by VTrans</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -1990,7 +2016,7 @@ Icon: Accident symbol imported from <a href="https://esri-styles.maps.arcgis.com
 <summary>VT 511 CCTV Images</summary>
 <p><strong>Source:</strong> <a href="https://gis.ne-compass.com/server/rest/services/Hosted/Vermont_View/FeatureServer/0">VT 511</a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Coordinate System:</strong> Vermont State Plane (<abbr title="European Petroleum Survey Group">EPSG</abbr>:32145)<br>
 <strong>Update Method:</strong> Automatically updated by VTrans CCTV feature layer service</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2013,7 +2039,7 @@ Icon: Camera symbol from <abbr title="Environmental Systems Research Institute">
 <summary>USA Storm Reports (past 24 hours)</summary>
 <p><strong>Source:</strong> <a href="https://rhvpkkiftonktxq3.svcs9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/NOAA_storm_reports_v1/FeatureServer/4"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br> 
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br> 
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br> 
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2040,7 +2066,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Hail Storm Reports (past 24 hours)</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br> 
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br> 
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br> 
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2062,7 +2088,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Wind Storm Reports (past 24 hours)</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_storm_reports_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2084,7 +2110,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary>Current <abbr title="National Weather Service">NWS</abbr> Events</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon 
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2113,7 +2139,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Severe Thunderstorm Warnings</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/0"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2132,7 +2158,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Tornado Warnings</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/1"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2151,7 +2177,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Flash Flood Warnings</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/2"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2170,7 +2196,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr> Special Marine Warnings</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_short_term_warnings_v1/FeatureServer/3"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2189,7 +2215,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary>Active Hurricanes, Cyclones, and Typhoons</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer"><abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr></a><br>
 <strong>Geometry Type:</strong> Points, Lines, Polygons 
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Updated daily by <abbr title="National Oceanic and Atmospheric Administration">NOAA</abbr>/<abbr title="National Weather Service">NWS</abbr></p>
 <p><strong>Grouped Feature Layer</strong><br>
 This grouped service contains the following layers, which depict active hurricanes and associated storm characteristics.</p>
@@ -2215,7 +2241,7 @@ Icon: Pre-defined symbology by <abbr title="National Oceanic and Atmospheric Adm
 <summary>Vermont Fire Danger (Daily)</summary>
 <p><strong>Source:</strong> <a href="https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/50"><abbr title="Vermont Department of Forests, Parks, and Recreation">VTFPR</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Vermont State Plane (EPSG:32145)<br>
+<strong>Coordinate System:</strong> Vermont State Plane (<abbr title="European Petroleum Survey Group">EPSG</abbr>:32145)<br>
 <strong>Update Method:</strong> Updated daily by Vermont FPR</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2232,7 +2258,7 @@ Icon: Pre-defined symbology by <abbr title="Vermont Department of Forests, Parks
 <summary>Current Wildfire Incidents</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/0"><abbr title="National Interagency Fire Center">NIFC</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Manually updated by the <abbr title="National Interagency Fire Center">NIFC</abbr></p>
 <p><strong>Pop-Up Attributes: (based on Wildfire Data Dictionary - <a href="../IRWIN_Data_Service_Users_Guide.pdf"><abbr title="Integrated Reporting of Wildfire Information">IRWIN</abbr> SCHEMA</a>)</strong></p>
 <ul>
@@ -2267,7 +2293,7 @@ Icon: Pre-defined symbology by <abbr title="National Interagency Fire Center">NI
 <summary>Current Wildfire Perimeters</summary>
 <p><strong>Source:</strong> <a href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/USA_Wildfires_v1/FeatureServer/1"><abbr title="National Interagency Fire Center">NIFC</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Manually updated by the <abbr title="National Interagency Fire Center">NIFC</abbr></p>
 <p><strong>Pop-Up Attributes: (based on Wildfire Data Dictionary - <a href="../IRWIN_Data_Service_Users_Guide.pdf"><abbr title="Integrated Reporting of Wildfire Information">IRWIN</abbr> SCHEMA</a>)</strong></p>
 <ul>
@@ -2289,7 +2315,7 @@ Icon: Pre-defined symbology by <abbr title="National Interagency Fire Center">NI
 <summary>Designated Counties</summary>
 <p><strong>Source:</strong> <a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/0"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Manually updated by the <abbr title="Federal Emergency Management Agency">FEMA</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2317,7 +2343,7 @@ The original <code>dec_num</code> field was rounded to ensure the value displaye
 <summary>Emergency Designated Counties</summary>
 <p><strong>Source:</strong> <a href="https://gis.fema.gov/arcgis/rest/services/FEMA/DECS_ALL/FeatureServer/1"><abbr title="Federal Emergency Management Agency">FEMA</abbr></a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Manually updated by the <abbr title="Federal Emergency Management Agency">FEMA</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2344,7 +2370,7 @@ The original <code>dec_num</code> field was rounded to ensure the value displaye
 <summary>AirNow Air Quality</summary>
 <p><strong>Source:</strong> <a href="https://www.arcgis.com/home/item.html?id=2d718d2733a74d1689d72b922c0ac4f4"><abbr title="Environmental Protection Agency">EPA</abbr></a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Automatically updated by the <abbr title="Environmental Protection Agency">EPA</abbr></p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2374,7 +2400,7 @@ Icon: Pre-defined symbology by <abbr title="Environmental Protection Agency">EPA
 <summary>Candada Wildfire Smoke Forecast</summary>
 <p><strong>Source:</strong> <a href="https://vtem.maps.arcgis.com/home/item.html?id=ba26a81a0133460799f155826342806a"><abbr title="Environmental Systems Research Institute">ESRI</abbr></a><br>
 <strong>Geometry Type:</strong> n/a (Image Service)<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Automatically updated by <abbr title="Environmental Systems Research Institute">ESRI</abbr></p>
 <p><strong>Symbology:</strong></p>
 <p><abbr title="Environmental Systems Research Institute">ESRI</abbr> Image Service<br>
@@ -2385,7 +2411,7 @@ Color Ramp: Pre-defined symbology by <abbr title="Environmental Systems Research
 <summary>Public Reports - <abbr title="Condition Monitoring Observer Reports">CMOR</abbr></summary>
 <p><strong>Source:</strong> <a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/CMOR_2022_Public/FeatureServer/0"><abbr title="Condition Monitoring Observer Reports">CMOR</abbr></a><br>
 <strong>Geometry Type:</strong> Point<br>
-<strong>Coordinate System:</strong> WGS1984 (EPSG:4326)<br>
+<strong>Coordinate System:</strong> WGS1984 (<abbr title="European Petroleum Survey Group">EPSG</abbr>:4326)<br>
 <strong>Update Method:</strong> Automatically updated by the <abbr title="Condition Monitoring Observer Reports">CMOR</abbr> via public submissions</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
@@ -2409,7 +2435,7 @@ Icon: Pre-defined symbology by <abbr title="Condition Monitoring Observer Report
 <summary>US Drought Monitor - Current</summary>
 <p><strong>Source:</strong> <a href="https://services5.arcgis.com/0OTVzJS4K09zlixn/ArcGIS/rest/services/USDM_current/FeatureServer/0">USDM</a><br>
 <strong>Geometry Type:</strong> Polygon<br>
-<strong>Coordinate System:</strong> Web Mercator (EPSG:3857)<br>
+<strong>Coordinate System:</strong> Web Mercator (<abbr title="European Petroleum Survey Group">EPSG</abbr>:3857)<br>
 <strong>Update Method:</strong> Manually updated (weekly) by the National Drought Mitigation Center</p>
 <p><strong>Pop-Up Attributes:</strong></p>
 <ul>
