@@ -157,8 +157,8 @@ The center visual of the page contains the situational awareness map. For more i
     - **Layers Button**: Users can add local data or provide a url to a web resource to display on the map. This is only saved for their map session and not uploaded to the COP dashboard.<br>
         - The screenshot on the left illustrates the list of available layers the user can turn on and off (by clicking the eye icon). The screenshot on the right displays the symbology associated with each visible data layer.
             <div style="display: flex; gap: 10px; align-items: flex-start;">
-            <img src="/images/pages/cop-map-layers-screenshot.jpg" style="width: 90%;">
-            <img src="/images/pages/cop-map-legend-screenshot.jpg" style="width: 90%;">
+            <img src="/vem-gis-docs/cop/images/pages/cop-map-layers-screenshot.jpg" style="width: 90%;">
+            <img src="/vem-gis-docs/cop/images/pages/cop-map-legend-screenshot.jpg" style="width: 90%;">
             </div>
 
 ### Accordian Sections

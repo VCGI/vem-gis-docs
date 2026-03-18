@@ -24,7 +24,7 @@ This map serves as the primary situational awareness guide for:
 | Group | Layer Name | Symbology | Source |
 |-------|------------|----------------|-------------|
 |  | VT EOCs - Status | Classified by `status` | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=77b187df5ac848caa987440f01e6d4a7&sublayer=1) |
-|  | WebEOC Shelter Status | Classified by `status` | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=33bf26076dc2417781babf229a5558d8&sublayer=1) |
+|  | WebEOC Shelter Status | Classified by `status` | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=8d0cb3a96a5e48cea14fd1919453674d) |
 |  | Flood Recovery Centers | Classified by `center status`  | [VEM](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3) |
 |  | Cooling Sites | Classified by `SiteTypeMap` | [VDH](https://maps.healthvermont.gov/arcgis/rest/services/VDH/EnvHealthCoolingSites_Public/MapServer/0) |
 |  | Red Cross Trailer Locations | ESRI basic point | [Red Cross](https://services.arcgis.com/pGfbNJoYypmNq86F/ArcGIS/rest/services/ARCNNETrailerLocations/FeatureServer/0) |
@@ -116,10 +116,35 @@ These feature services are not symbolized on the map but are used to populate wi
     **Pop-Up Attributes:**
     
     - `shelter_name`: Facility name
-    - `address`: Street address
-    - `town`: Town/city
-    - NEED TO UPDATE LINK AND FIELDS AFTER NEW BOARD IS PUBLISHED
-
+    - `status`: Indicates whether the shelters is open or closed.
+    - `capacity`: Total number of people the shelter can accommodate
+    - `occupancy`: Total number of people currently in the shelter 
+    - `availability`: Number of additional people the shelter can accept
+    - `address`: Shelter street address
+    - `shelter_type`: Indicates whether the shelter is Red Cross Managed or Independently Managed
+    - `warming_center`: The shelter serves as warming shelter during extreme cold (Yes, No)
+    - `cooling_center`: The shelter serves as cooling shelter during extreme heat (Yes, No)
+    - `open_time`: Time the shelter opens
+    - `close_time`: Time the shelter closes
+    - `primary_shelter_contact`: Primary person to contact about the shelter
+    - `primary_shelter_contact_phone`: Primary shelter contact phone number
+    - `secondary_shelter_contact`: Secondary person to contact about the shelter
+    - `secondary_shelter_contact_phone`: Secondary shelter contact phone number
+    - `primary_facility_contact`: Primary person to contact about the facility where the shelter is located (e.g., Shelter located inside a high school or hospital)
+    - `primary_facility_contact_phone`: Primary facility contact phone number
+    - `secondary_facility_contact`: Secondary person to contact about the facility 
+    - `secondary_facility_contact_phone`: Secondary facility contact phone number
+    - `ada_compliant`: Indicates whether the shelter is ADA compliant (Yes, No)
+    - `backup_generator`: Indicates presence of backup generator (Yes, No)
+    - `charging_station`: Indicates presence of charging station (Yes, No)
+    - `community`: Indicates the primary community (town) served by the shelter
+    - `functional_needs`: Indicates whether the shelter offers functional needs support services (FNSS) - (Yes, No)
+    - `pet_friendly`: Indicates whether the shelter is pet friendly (Yes, No)
+    - `reception_center`: Indicates where the shelters has a reception center (Yes, No)
+    - `SafetySurvey`: Indicates whether a safety survey has been conducted (Performed, N/A)
+    - `region`: Indicates which region of the Vermont the shelter serves
+    - `incidentid`: Unique ID assigned to emergency incidents
+    - `shelter_comments`: Any additional comments relevant to the shelter           
 
     **Symbology:**
 
@@ -128,7 +153,7 @@ These feature services are not symbolized on the map but are used to populate wi
         ![VT Shelter Status Symbology Screenshot](../images/maps/vt-shelters-symbology.jpg)
 
     !!! warning "Shelter Status Updates"
-        VT shelter status is manually updated by AHS via WebEOC. Verify current status with AHS before directing individuals.
+        VT shelter status is manually updated by either ARC or AHS via WebEOC. Verify current status with ARC and/or AHS before directing individuals.
 
 ??? info "Flood Recovery Centers"
     **Source:** [VEM AGO Feature Layer](https://vtem.maps.arcgis.com/home/item.html?id=e8073b08a3364f47ba8ac27232c8459c&sublayer=3)  
@@ -156,7 +181,7 @@ These feature services are not symbolized on the map but are used to populate wi
     - `vdol_present`: VT Department of Labor representative at center (Yes, No)
     - `aoe_present`: VT Agency of Education representative at center (Yes, No)
     - `esd_present`: VT Economic Services Division representative at center (Yes, No)
-    - `da_present`: VT Designgated Agencies for Mental Health representative at center (Yes, No)
+    - `da_present`: VT Designated Agencies for Mental Health representative at center (Yes, No)
     - `vdh_present`: VT Department of Health representative at center (Yes, No)
     - `days_open`: Mondays & Fridays, Tuesdays & Fridays, Wednesday & Sundays, Thursdays
 

@@ -17,7 +17,7 @@ This map provides detailed weather information for:
 ## Data Layers
 
 !!! warning "Layer Visibility"
-    Many layers are only turned on (visbile by Default) seasonally or during SEOC activation. For example, NWS Ice Accumulation would only be turned on with sufficient warning of an impending ice storm.
+    Many layers are only turned on (visible by Default) seasonally or during SEOC activation. For example, NWS Ice Accumulation would only be turned on with sufficient warning of an impending ice storm.
 
 | Group | Layer Name | Symbology | Source |
 |-------|------------|----------------|-------------|
@@ -104,7 +104,7 @@ This map provides detailed weather information for:
     
     - `Name`: Unique weather station name
     - `Status`: This field is strictly reporting the health of the communication link
-    - `roadway`: Roadway adjance to the weather station
+    - `roadway`: Roadway adjacent to the weather station
     - `AirTemp`: Standard ambient air temperature (in fahrenheit)
     - `DewPoint`: A value derived from the air temperature and relative humidity sensors (in fahrenheit)
     - `WindSpeed`: Wind direction recorded by weather station (in mph)
@@ -282,7 +282,7 @@ This map provides detailed weather information for:
     
     - `Event`: NWS event type (e.g., Flash Flood Watch, Fire Warning, Winter Weather Advisory, etc.)<br>
     - `Affected`: Geographic areas affected
-    - `Summary`: Concatonated summary of event, time period of event, and issuing NWS office.
+    - `Summary`: Concatenated summary of event, time period of event, and issuing NWS office.
     - `Updated`: Time/date last updated
     - `Start`: Start time of event notice
     - `End`: End time of event notice

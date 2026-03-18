@@ -32,3 +32,4 @@
 *[COP]: Common Operating Picture
 *[SEOC]: State Emergency Operations Center
 *[RAWS]: Remote Automatic Weather Stations
+*[EPSG]: European Petroleum Survey Group
