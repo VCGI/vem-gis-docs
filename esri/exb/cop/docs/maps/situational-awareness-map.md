@@ -441,7 +441,7 @@ These feature services are not symbolized on the map but are used to populate wi
     
     - `Event`: NWS event type (e.g., Flash Flood Watch, Fire Warning, Winter Weather Advisory, etc.)<br>
     - `Affected`: Geographic areas affected
-    - `Summary`: Concatonated summary of event, time period of event, and issuing NWS office.
+    - `Summary`: Concatenated summary of event, time period of event, and issuing NWS office.
     - `Updated`: Time/date last updated
     - `Start`: Start time of event notice
     - `End`: End time of event notice
@@ -456,8 +456,11 @@ These feature services are not symbolized on the map but are used to populate wi
 
     **Filter:**
 
-    Filtered by `Summary Overview`<br><br>
-        ![NOAA Current NWS Events Filter Screenshot](../images/maps/noaa-current-nws-events-filter.jpg)
+    Filtered by `Summary Overview` and `Subject Type`<br><br>
+        <div style="display: flex; gap: 10px; align-items: flex-start;">
+            <img src="/vem-gis-docs/cop/images//maps/noaa-current-nws-events-filter.jpg" style="width: 90%;">
+            <img src="/vem-gis-docs/cop/images/maps/noaa-current-nws-events-filter2.jpg" style="width: 90%;">
+            </div>
 
     !!! warning "Data Limitations"
         Weather alert data may be delayed during severe weather events when NWS systems experience heavy load. Polygons represent alert zones, not exact impact areas.
