@@ -47,10 +47,10 @@ The page displays a left and right column containing column and accordion widget
 
             | Fire Danger | Hex | Swatch |
             | :--- | :--- | :--- |
-            | Low| #89f789 | <span style="display:inline-block; width:20px; height:20px; background:#89f789; border:1px solid #ccc;"></span> |
-            | Moderate | #60ceff | <span style="display:inline-block; width:20px; height:20px; background:#60ceff; border:1px solid #ccc;"></span> |
-            | High | #e89d00 | <span style="display:inline-block; width:20px; height:20px; background:#e89d00; border:1px solid #ccc;"></span> |
-            | Very High | #db7d44 | <span style="display:inline-block; width:20px; height:20px; background:#db7d44; border:1px solid #ccc;"></span> |
+            | Low| #38A800 | <span style="display:inline-block; width:20px; height:20px; background:#38A800; border:1px solid #ccc;"></span> |
+            | Moderate | #00A9E6 | <span style="display:inline-block; width:20px; height:20px; background:#00A9E6; border:1px solid #ccc;"></span> |
+            | High | #FFFF00 | <span style="display:inline-block; width:20px; height:20px; background:#FFFF00; border:1px solid #ccc;"></span> |
+            | Very High | #FF5500 | <span style="display:inline-block; width:20px; height:20px; background:#FF5500; border:1px solid #ccc;"></span> |
             | Extreme | #A80000 | <span style="display:inline-block; width:20px; height:20px; background:#A80000; border:1px solid #ccc;"></span> |
 
             The image on the left illustrates how the Fire Danger Rating Areas list is displayed to the user on the Fire Risk page and the image on the right illustrates how the background color is dynamically styled using the `Fire Danger` field.
